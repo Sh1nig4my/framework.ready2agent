@@ -1,7 +1,7 @@
 # Ready2Agent (R2A)
 
 <p align="center">
-  <img src="/ready2agent-logo-nobg.png" alt="Ready2Agent Logo" width="120" />
+  <img src="public/ready2agent-logo-nobg.png" alt="Ready2Agent Logo" width="120" />
 </p>
 
 ---
