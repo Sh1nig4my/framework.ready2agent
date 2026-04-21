@@ -24,7 +24,7 @@ Questo `README.md` è l'**unico punto di ingresso** per il progetto.
 
 ```bash
 # 1. Clona il repository
-git clone https://github.com/your-repo/ready2agent.git
+git clone https://github.com/Sh1nig4my/it.framework.ready2agent.git
 cd ready2agent
 
 # 2. Installa le dipendenze
@@ -200,7 +200,7 @@ Vedere il file [LICENSE.md](LICENSE.md) per i termini completi.
 
 ## Link
 
-- **GitHub**: https://github.com/your-repo/ready2agent
+- **GitHub**: https://github.com/Sh1nig4my/it.framework.ready2agent
 - **Licenza**: [LICENSE.md](LICENSE.md)
 - **Documentazione**: Vedere i file nella root e cartella `agent-workspace/`
 
