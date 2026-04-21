@@ -320,3 +320,109 @@ export function MedalIcon(props: IconProps) {
     </IconBase>
   );
 }
+
+export function ArrowRightIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </IconBase>
+  );
+}
+
+export function CodeIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <path d="m18 16 4-4-4-4" />
+      <path d="m6 8-4 4 4 4" />
+      <path d="M14.5 4h-5v16h5" />
+    </IconBase>
+  );
+}
+
+export function GlobeIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M2 12h20" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </IconBase>
+  );
+}
+
+export function LayersIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <path d="M12 2 2 7l10 5 10-5-10-5Z" />
+      <path d="M2 17l10 5 10-5" />
+      <path d="M2 12l10 5 10-5" />
+    </IconBase>
+  );
+}
+
+export function BookOpenIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+    </IconBase>
+  );
+}
+
+export function RocketIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.95-.84 1.63-2.14 1.63-4.5 0-1.76-.87-3.26-1.63-4.5" />
+      <path d="M12 15c-3.87 0-6.71 1.91-7.5 4.5" />
+      <path d="M10 9 8.5 7" />
+      <path d="M14 9 15.5 7" />
+      <path d="M12 15v4" />
+      <path d="m12 19 3-3" />
+    </IconBase>
+  );
+}
+
+export function WorkflowIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <rect x="3" y="3" width="4" height="4" rx="1" />
+      <rect x="17" y="3" width="4" height="4" rx="1" />
+      <rect x="10" y="17" width="4" height="4" rx="1" />
+      <path d="M7 7h6" />
+      <path d="M19 5h2" />
+      <path d="M17 17v2" />
+      <path d="M7 19h6" />
+    </IconBase>
+  );
+}
+
+export function ShieldIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <path d="M20 13c0 5-3.5 7.5-7.66 8.83-1.27.46-2.66.84-4.34.84C4.5 21 2 17 2 13c0-3.5 2.5-6 7-6 2.19 0 3.97.58 5.5 1.5" />
+    </IconBase>
+  );
+}
+
+export function ServerIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <rect x="2" y="2" width="20" height="8" rx="2" />
+      <rect x="2" y="14" width="20" height="8" rx="2" />
+      <path d="M6 6h.01" />
+      <path d="M6 18h.01" />
+    </IconBase>
+  );
+}
+
+export function DatabaseIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <ellipse cx="12" cy="5" rx="9" ry="3" />
+      <path d="M12 22v-4" />
+      <path d="M3 7c0-1.5 3-3 9-3s9 1.5 9 3" />
+      <path d="M3 12c0-1.5 3-3 9-3s9 1.5 9 3" />
+      <path d="M3 17c0-1.5 3-3 9-3s9 1.5 9 3" />
+    </IconBase>
+  );
+}
