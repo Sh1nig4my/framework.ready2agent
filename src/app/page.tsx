@@ -103,7 +103,7 @@ const methodologies = [
 ];
 
 const quickStart = [
-  { step: "01", title: "Clone", command: "git clone https://github.com/Sh1nig4my/it.framework.ready2agent.git" },
+  { step: "01", title: "Clone", command: "git clone https://github.com/Sh1nig4my/framework.ready2agent.git" },
   { step: "02", title: "Install", command: "npm install && npm run dev" },
   { step: "03", title: "Setup", command: "Vai su /setup per creare il primo account SUPER" },
 ];
@@ -499,7 +499,7 @@ export default async function HomePage() {
                     </Button>
                   </Link>
                   <a
-                    href="https://github.com/Sh1nig4my/it.framework.ready2agent"
+                    href="https://github.com/Sh1nig4my/framework.ready2agent"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

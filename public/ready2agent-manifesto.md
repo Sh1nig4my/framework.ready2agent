@@ -158,7 +158,7 @@ Il codice è open. La licenza è permissiva per uso personale e studio. L'unico 
 ## Inizia Ora
 
 ```bash
-git clone https://github.com/Sh1nig4my/it.framework.ready2agent.git
+git clone https://github.com/Sh1nig4my/framework.ready2agent.git
 cd ready2agent
 npm install
 npm run dev
