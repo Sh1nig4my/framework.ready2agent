@@ -28,7 +28,7 @@ Se utilizzi questo framework, sei tenuto a:
 3. **Indicare chiaramente** che il framework è usato per uso personale o studio
 
 Esempio di attribuzione richiesta:
-> "Questo progetto utilizza [Ready2Agent](https://github.com/Sh1nig4my/it.framework.ready2agent) - il framework che costruisce se stesso."
+> "Questo progetto utilizza [Ready2Agent](https://github.com/Sh1nig4my/framework.ready2agent) - il framework che costruisce se stesso."
 
 ## Limitazione di Garanzia
 
@@ -44,7 +44,7 @@ Sei libero di creare fork di questo progetto per uso personale o studio. Ti inco
 
 ## Contatti
 
-- Repository GitHub: https://github.com/Sh1nig4my/it.framework.ready2agent
+- Repository GitHub: https://github.com/Sh1nig4my/framework.ready2agent
 - Per domande sull'uso, scrivi ai maintainer del progetto
 
 ---
