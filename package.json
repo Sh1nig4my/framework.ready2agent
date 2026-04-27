@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "tsx scripts/run-tests.ts"
+    "typecheck": "tsc --noEmit",
+    "test": "tsx src/scripts/run-tests.ts"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.1",

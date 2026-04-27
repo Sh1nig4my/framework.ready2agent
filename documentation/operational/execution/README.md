@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- **Ultimo aggiornamento**: 2026-04-15
+- **Ultimo aggiornamento**: 2026-04-27
 - **Pubblico**: agenti di coding
 - **Status**: attivo
 

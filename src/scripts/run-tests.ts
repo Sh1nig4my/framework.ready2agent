@@ -13,7 +13,7 @@ async function runTests() {
 
   const result = spawnSync(
     process.execPath,
-    ["--import", "tsx", "--test", "--test-concurrency=1", "tests/mongo-env-guardrails.test.ts"],
+    ["--import", "tsx", "--test", "--test-concurrency=1", "src/tests/mongo-env-guardrails.test.ts"],
     {
       stdio: "inherit",
       env,

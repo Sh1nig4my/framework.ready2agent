@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- **Ultimo aggiornamento**: 2026-04-15
+- **Ultimo aggiornamento**: 2026-04-27
 - **Pubblico**: agenti di coding
 - **Status**: attivo
 
@@ -289,7 +289,7 @@ Procedi quando sbloccato
 
 - Master index: `workflow/R2A-integration/00_ready2agent_master_execution_index.md`
 - Workflow hub: `workflow/R2A-integration/README.md`
-- Tracker giornaliero: `workflow/R2A-integration/sh1nig4my_daily_execution_tracker.md`
+- Tracker giornaliero: `workflow/sh1nig4my_daily_execution_tracker.md`
 
 ---
 

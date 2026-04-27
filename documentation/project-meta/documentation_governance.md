@@ -18,9 +18,9 @@ Definire **regole operative** per mantenere la documentazione coerente durante l
 
 Questa governance si applica a:
 
-- Documenti in `agent-workspace/`
+- Documenti in `documentation/`
 - Documenti operativi in `workflow/R2A-integration/`
-- `PROMPT.md`
+- Prompt in `prompts/`
 - `README.md` (entrypoint)
 
 ---
@@ -57,8 +57,8 @@ Ogni sezione ha il suo ruolo. Non confondere.
 ### 2.4 Prompt Ufficiali
 
 ```
-✅ PROMPT UFFICIALI VIVONO IN PROMPT.md
-✅ GUIDA D'USO DEI MODE VIVE IN workflow/prompts/README.md
+✅ PROMPT UFFICIALI VIVONO IN `prompts/`
+✅ GUIDA D'USO DEI PROMPT VIVE IN `prompts/README.md`
 ```
 
 ---
@@ -100,7 +100,7 @@ Ogni documento dovrebbe avere:
 
 ## 4. Policy di Aggiornamento
 
-### 4.1 agent-workspace/README.md
+### 4.1 documentation/README.md
 
 Aggiornare quando:
 - Struttura cartelle cambia
@@ -117,9 +117,9 @@ Aggiornare quando:
 
 Aggiornare quando:
 - Tracking operativo cambia
-- Allineamento con agent-workspace si sposta
+- Allineamento con documentation/ si sposta
 
-### 4.4 PROMPT.md
+### 4.4 prompts/
 
 Aggiornare quando:
 - Modello operativo dei prompt cambia

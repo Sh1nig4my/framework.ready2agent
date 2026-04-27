@@ -317,7 +317,7 @@ Quando serve modificare questi vincoli:
 
 1. Proponi modifica in `project-meta/decision_log.md`
 2. Aggiorna questo documento
-3. Aggiorna `agent-workspace/ready2agent_master_spec_v2_1.md`
+3. Aggiorna `workflow/requirements/ready2agent_master_spec_v2_1.md` (sezione storica, se necessario)
 4. Notifica nell'issue/PR
 
 ---

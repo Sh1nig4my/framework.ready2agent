@@ -49,10 +49,10 @@
 
 - `src/server/config/env.ts`
 - `src/server/db/mongoose.ts`
-- `tests/mongo-env-guardrails.test.ts`
-- `scripts/run-tests.ts`
+- `src/tests/mongo-env-guardrails.test.ts`
+- `src/scripts/run-tests.ts`
 - `workflow/R2A-integration/phase_7_hardening/STATUS.md`
-- `workflow/R2A-integration/sh1nig4my_daily_execution_tracker.md`
+- `workflow/sh1nig4my_daily_execution_tracker.md`
 
 ## Esito finale
 

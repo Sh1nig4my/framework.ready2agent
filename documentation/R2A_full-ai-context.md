@@ -129,18 +129,18 @@ It removes ambiguity about what the project is and how it should evolve.
 ## 7.1 Entrypoint and context payload
 
 - `README.md` is the official entrypoint.
-- `R2A_full-ai-context.md` is the first deep-read artifact.
+- `documentation/R2A_full-ai-context.md` is the full-context artifact for extended analysis and external LLM handoff.
 
 ## 7.2 Agent execution knowledge base
 
-`agent-workspace/` is the operative context folder used by coding agents.
+`documentation/` is the operative context folder used by coding agents.
 It contains architectural rules, functional constraints, setup baseline, decision traces, and case-study framing.
 
 Expected usage:
 
-- Before implementing anything, agents build context from `agent-workspace/`.
-- New changes must remain consistent with this context.
-- If context changes, docs in this area are updated in the same cycle.
+- For routine implementation, agents use the quickstart + operational documentation path.
+- For extended analysis or external AI context transfer, use this file.
+- New changes must remain consistent with repository documentation.
 
 ## 7.3 Workflow case-study corpus
 
@@ -199,9 +199,9 @@ Copy strategy:
 ### 10.1 Source-of-truth hierarchy
 
 1. Runtime behavior in code
-2. Architecture and constraints in `agent-workspace/operational/spec/*`
+2. Architecture and constraints in `documentation/operational/spec/*`
 3. Operational execution trail in `workflow/R2A-integration/*`
-4. Decision trace in `agent-workspace/project-meta/decision_log.md`
+4. Decision trace in `documentation/project-meta/decision_log.md`
 
 ### 10.2 Change hygiene
 
@@ -234,22 +234,26 @@ It contains the essential context to understand:
 Then provide, in order:
 
 1. `README.md`
-2. `PROMPT.md`
-3. `agent-workspace/README.md`
+2. `prompts/README.md`
+3. `documentation/README.md`
 4. `workflow/R2A-integration/README.md`
 
 ## 13) Practical Onboarding Checklist
 
-For a new agent or contributor:
+For a new agent or contributor (operational path):
 
 1. Read `README.md`.
-2. Read this file fully.
-3. Read `PROMPT.md` and choose execution mode.
-4. Load context from `agent-workspace/`.
+2. Read `documentation/quickstart/agent_start_here.md`.
+3. Read `documentation/operational/README.md` and operational indexes.
+4. Read `prompts/README.md` and choose execution mode.
 5. Inspect workflow materials in `workflow/R2A-integration/`.
 6. Implement only in scoped boundaries.
 7. Validate (`lint`, `test`, `build` where applicable).
 8. Update docs impacted by the change.
+
+Extended-context path (optional):
+
+9. Read this full file when a complete narrative context is required.
 
 ## 14) Non-Objectives / Guardrails
 
@@ -263,8 +267,8 @@ For a new agent or contributor:
 The project is aligned when all these are true:
 
 - `/dashboard` communicates the same core narrative as `README.md`
-- `README.md` points first to `R2A_full-ai-context.md`
-- `agent-workspace/` is complete and coherent for agent execution
+- `README.md` points first to quickstart for operational work and to this file for extended context
+- `documentation/` is complete and coherent for agent execution
 - `workflow/R2A-integration/` is coherent as case-study methodology
 - no stale references remain to obsolete paths or removed modules
 - code, docs, and tests describe the same system reality

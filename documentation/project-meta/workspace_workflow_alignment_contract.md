@@ -11,14 +11,14 @@
 ## Scopo
 
 Definire il **confine tra**:
-- `agent-workspace/` - contesto e vincoli
+- `documentation/` - contesto e vincoli
 - `workflow/R2A-integration/` - esecuzione operativa
 
 ---
 
 ## 1. Source of Truth Map
 
-### 1.1 agent-workspace/
+### 1.1 documentation/
 
 ```
 project-docs/
@@ -70,7 +70,7 @@ sh1nig4my_daily_execution_tracker.md
 
 ## 2. Confini Definiti
 
-### 2.1 agent-workspace/ = CONTESTO
+### 2.1 documentation/ = CONTESTO
 
 ```
 COSA CONTIENE:
@@ -111,7 +111,7 @@ COSA NON CONTIENE:
 
 ```
 1. Aggiorna workflow/R2A-integration/phase_*/PHASE-*.md
-2. Aggiorna agent-workspace/operational/execution/
+2. Aggiorna documentation/operational/execution/
 3. Entrambi riflettono la stessa realtà
 ```
 
@@ -140,7 +140,7 @@ COSA NON CONTIENE:
 1. SPEC (operational/spec/ e file master)
 2. TASK OPERATIVO CORRENTE (workflow/R2A-integration/phase_*/PHASE-*.md)
 3. TRACKER E STATUS (workflow/R2A-integration/*.md)
-4. agent-workspace/ (per contesto non operativo)
+4. documentation/ (per contesto non operativo)
 ```
 
 ### 4.2 Esempio Conflitto
@@ -158,7 +158,7 @@ Soluzione:
 
 ## 5. Integration Points
 
-### 5.1 agent-workspace → workflow
+### 5.1 documentation -> workflow
 
 ```
 Quando si lavora a un task:
@@ -168,7 +168,7 @@ Quando si lavora a un task:
 4. Aggiorna status in workflow/
 ```
 
-### 5.2 workflow → agent-workspace
+### 5.2 workflow -> documentation
 
 ```
 Quando un task rivela nuovo gap:
@@ -191,7 +191,7 @@ PER LAVORO OPERATIVO (task execution):
 
 PER CONTESTO GENERALE (onboarding, review):
 1. README.md
-2. agent-workspace/README.md
+2. documentation/README.md
 3. operational/spec/README.md
 4. operational/case-study/
 ```
@@ -224,7 +224,7 @@ MANTENUTORE PRINCIPALE:
 ## 8. Summary
 
 ```
-agent-workspace/ = SAPERE
+documentation/ = SAPERE
    → Cosa deve essere fatto
    → Quali sono i vincoli
    → Come è strutturato il sistema
