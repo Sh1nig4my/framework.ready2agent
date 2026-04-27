@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- **Ultimo aggiornamento**: 2026-04-15
+- **Ultimo aggiornamento**: 2026-04-27
 - **Pubblico**: agenti di coding
 - **Status**: attivo
 
@@ -20,9 +20,9 @@ Questo documento è anche un **artefatto di caso studio**: può essere forkato c
 
 Per ogni task, consulta in ordine:
 
-1. `agent-workspace/operational/spec/README.md`
-2. `agent-workspace/operational/alignment/README.md`
-3. `agent-workspace/operational/execution/README.md`
+1. `documentation/operational/spec/README.md`
+2. `documentation/operational/alignment/README.md`
+3. `documentation/operational/execution/README.md`
 
 ---
 
@@ -168,9 +168,9 @@ PHASE 7 → dipende da tutte
 ## Links Utili
 
 - **Workflow Hub**: `workflow/R2A-integration/README.md`
-- **Tracker**: `workflow/R2A-integration/sh1nig4my_daily_execution_tracker.md`
-- **Prompts Guide**: `workflow/prompts/README.md`
-- **Operational Context**: `agent-workspace/operational/execution/README.md`
+- **Tracker**: `workflow/sh1nig4my_daily_execution_tracker.md`
+- **Prompts Guide**: `prompts/README.md`
+- **Operational Context**: `documentation/operational/execution/README.md`
 
 ---
 

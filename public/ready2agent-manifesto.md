@@ -57,7 +57,7 @@ Gli agenti AI non sono dipendenti: sono **collaboratori con contesto**.
 
 Ready2Agent fornisce:
 
-- **Contesto strutturale**: `agent-workspace/` contiene regole, vincoli, pattern
+- **Contesto strutturale**: `documentation/` contiene regole, vincoli, pattern
 - **Tracking operativo**: `workflow/` documenta ogni decisione e task
 - **Validazione visibile**: ogni cambiamento ha traccia e ragione
 

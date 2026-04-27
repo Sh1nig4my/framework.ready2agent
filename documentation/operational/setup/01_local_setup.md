@@ -181,9 +181,9 @@ ready2agent/
 │   ├── components/    # UI components
 │   ├── server/        # Backend logic
 │   └── shared/        # Contracts
-├── agent-workspace/   # Documentazione
+├── documentation/     # Documentazione completa progetto
 ├── workflow/          # Artefatti workflow
-├── tests/             # Test suite
+├── prompts/           # Prompt operativi
 └── public/            # Asset statici
 ```
 
@@ -244,10 +244,10 @@ opencode --context "Ready2Agent development"
 
 ### Context Caricato Automaticamente
 
-OpenCode leggerà:
+OpenCode leggera:
 - `README.md`
-- `agent-workspace/README.md`
-- `PROMPT.md`
+- `documentation/README.md`
+- `prompts/README.md`
 
 ---
 

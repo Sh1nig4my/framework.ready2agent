@@ -413,4 +413,4 @@ Per progetti personali: Vercel Free + Atlas M0.
 
 ---
 
-*Per dettagli sull'architettura tecnica, vedere `agent-workspace/README.md`.*
+*Per dettagli sull'architettura tecnica, vedere `documentation/README.md`.*

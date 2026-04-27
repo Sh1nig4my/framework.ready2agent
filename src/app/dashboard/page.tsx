@@ -40,7 +40,7 @@ const architecturePillars = [
     id: "workflow",
     title: "Metodo agent-native",
     description:
-      "La documentazione e divisa tra contesto strutturale (agent-workspace) e caso studio operativo (workflow/R2A-integration).",
+      "La documentazione e divisa tra contesto strutturale (documentation/) e caso studio operativo (workflow/R2A-integration).",
     icon: ActivityIcon,
   },
 ] as const;
@@ -131,7 +131,7 @@ export default async function DashboardHomePage() {
         <CardHeader>
           <CardTitle>Ordine di lettura operativo</CardTitle>
           <CardDescription>
-            `README.md` e l&apos;entrypoint. Da li si passa a `R2A_full-ai-context.md`, poi alla knowledge base in `agent-workspace/` e al caso studio in `workflow/R2A-integration/`.
+            `README.md` e l&apos;entrypoint. Da li si passa a `documentation/R2A_full-ai-context.md`, poi al contesto in `documentation/` e al caso studio in `workflow/R2A-integration/`.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4 lg:grid-cols-2">
@@ -141,7 +141,7 @@ export default async function DashboardHomePage() {
               <p className="text-sm font-semibold text-[var(--color-foreground)]">Contesto per agenti</p>
             </div>
             <p className="text-sm leading-7 text-[var(--color-foreground-muted)]">
-              `agent-workspace/` contiene regole, vincoli, decisioni, setup, copy e linee guida per sviluppo coerente anche tra team e agenti diversi.
+              `documentation/` contiene regole, vincoli, decisioni, setup, copy e linee guida per sviluppo coerente anche tra team e agenti diversi.
             </p>
           </div>
           <div className="surface-panel p-5">

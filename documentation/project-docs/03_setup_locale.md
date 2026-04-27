@@ -188,9 +188,9 @@ ready2agent/
 │   ├── components/    # UI components
 │   ├── server/        # Backend logic
 │   └── shared/        # Contracts condivisi
-├── agent-workspace/   # Documentazione agenti
+├── documentation/     # Documentazione completa progetto
 ├── workflow/          # Artefatti workflow
-├── tests/             # Test suite
+├── prompts/           # Prompt operativi
 └── public/            # Asset statici
 ```
 
@@ -238,10 +238,10 @@ cd ready2agent
 opencode
 ```
 
-OpenCode leggerà automaticamente:
+OpenCode leggera automaticamente (in base al prompt usato):
 - `README.md`
-- `agent-workspace/README.md`
-- `PROMPT.md`
+- `documentation/README.md`
+- `prompts/README.md`
 - Configurazione TypeScript
 
 ---

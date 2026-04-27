@@ -4,206 +4,90 @@
   <img src="public/ready2agent-logo-nobg.png" alt="Ready2Agent Logo" width="120" />
 </p>
 
----
-
 ## Metadati
 
-- Ultimo aggiornamento: 2026-04-15
+- Ultimo aggiornamento: 2026-04-27
 - Stato: Pronto per la produzione
 
-Ready2Agent è un framework AI-native costruito con Next.js + TypeScript, progettato per due obiettivi paralleli:
+Ready2Agent è un framework AI-native costruito con Next.js + TypeScript con due livelli di lettura complementari: livello divulgativo sul metodo e livello implementativo plug-and-play.
 
-1. **Baseline plug-and-play**: autenticazione, governance ruoli piramidale, permessi delegati, bootstrap setup, e moduli dashboard privati.
-2. **Caso studio pubblico per sviluppo con agenti coding**: prompt riutilizzabili, workflow esecutivo, tracciamento artefatti e disciplina documentale.
-
-Questo `README.md` è l'**unico punto di ingresso** per il progetto.
-
----
+Questo `README.md` e il primo file da leggere sempre, sia per agenti sia per esseri umani.
 
 ## Quick Start
 
 ```bash
-# 1. Clona il repository
 git clone https://github.com/Sh1nig4my/framework.ready2agent.git
 cd ready2agent
-
-# 2. Installa le dipendenze
 npm install
-
-# 3. Configura l'ambiente
 cp .env.example .env.local
-
-# 4. Modifica .env.local con i tuoi valori (vedi DEPLOY.md per dettagli)
-#    - APP_RUNTIME=local
-#    - MONGODB_URI=mongodb://localhost:27017/ready2agent
-#    - Genera secrets: NEXTAUTH_SECRET, AUTH_TOKEN_PEPPER
-
-# 5. Avvia il server di sviluppo
 npm run dev
-
-# 6. Su database vuoto, vai su /setup per creare il primo account SUPER
 ```
 
----
+Su database vuoto vai su `/setup` per creare il primo account `SUPER`.
 
-## Cosa Ottieni Out-of-the-Box
+## Struttura Standard
 
-| Modulo | Descrizione |
-|--------|-------------|
-| **Autenticazione** | NextAuth.js con credentials provider, sessioni JWT, rate limiting |
-| **Governance Ruoli** | SUPER > ADMIN > OPERATOR > USER con permessi granulari |
-| **Dashboard** | Dashboard privata basata sui ruoli con navigazione filtrata per permessi |
-| **Bootstrap** | Flusso first-run per creare il primo account SUPER |
-| **Gestione Staff** | Invita e gestisci ADMIN/OPERATOR con assegnazione permessi |
-| **Audit Logging** | Tracciamento eventi auth e azioni admin |
+La struttura de facto del repository e:
 
----
-
-## Stack Tecnologico
-
-| Categoria | Tecnologia |
-|-----------|------------|
-| Framework | Next.js 16 + TypeScript |
-| Runtime | Node.js 18+ |
-| Database | MongoDB + Mongoose |
-| Autenticazione | NextAuth.js |
-| Styling | CSS Variables + componenti shadcn-like |
-| Deployment | Vercel (consigliato) |
-
----
-
-## Stack Strumentale (Consigliato)
-
-| Scopo | Strumento | Note |
-|-------|-----------|------|
-| IDE (sviluppo umano) | WebStorm | Gratuito per progetti personali |
-| IDE/CLI (agente) | OpenCode | Assistente coding AI-native |
-| Hosting | Vercel | Tier gratuito disponibile |
-| Database | MongoDB Atlas | Tier gratuito disponibile |
-| Versionamento | GitHub | Workflow fork-first |
-
----
-
-## Struttura del Progetto
-
-```
+```text
 ready2agent/
-├── src/
-│   ├── app/            # Pagine Next.js App Router e route API
-│   ├── components/     # Componenti React UI
-│   ├── server/          # Backend: service, repository, model
-│   └── shared/         # Tipi condivisi e contratti
-├── agent-workspace/    # Contesto operativo per agenti coding
-├── workflow/          # Caso studio: metodologia esecutiva task-by-task
-├── public/            # Asset statici
-└── tests/             # Test suite
+├── src/                # Tutto il codice applicativo
+│   ├── app/            # Frontend + route API (App Router)
+│   ├── components/     # Componenti UI
+│   ├── server/         # Backend runtime
+│   ├── shared/         # Contratti condivisi
+│   ├── tests/          # Test applicativi
+│   └── scripts/        # Script di avvio/utilita
+├── documentation/      # Documentazione completa progetto (Documentation)
+├── workflow/           # Workflow operativo e caso studio
+│   └── requirements/   # Requisiti iniziali (input workflow)
+├── prompts/            # Prompt operativi per agenti
+└── public/             # Asset statici
 ```
-
----
 
 ## Pattern Architetturale
 
-```
-Route API (src/app/api/*)
-        ↓
-    Controller
-        ↓
-    Service (logica di business)
-        ↓
-    Repository (accesso ai dati)
-        ↓
-    MongoDB/Mongoose
-```
+Controller (`src/app/api/*`) -> Service (`src/server/service/*`) -> Repository (`src/server/repository/*`) -> MongoDB.
 
-**Separazione dei layer:**
-- `src/app/api/*` - Boundary HTTP, gestione request/response
-- `src/server/service/*` - Logica di business, policy, orchestrazione
-- `src/server/repository/*` - Operazioni database
-- `src/shared/*` - Contratti condivisi (tipi, costanti)
+## Due Livelli di Lettura
 
----
+1. Divulgativo/metodologico: mostra il metodo di lavoro agent-assisted, il workflow e la tracciabilita.
+2. Implementativo/plug-and-play: fornisce una base applicativa pronta da usare e adattare nei progetti personali.
 
-## Modello dei Ruoli
+## Documentazione e Prompt
 
-| Ruolo | Descrizione | Livello Accesso |
-|-------|-------------|-----------------|
-| **SUPER** | Autorità globale | Accesso completo al sistema |
-| **ADMIN** | Governance delegata | Gestione staff + oversight utenti |
-| **OPERATOR** | Operatore scoped | Mappa capability granulare |
-| **USER** | Utente standard | Dashboard personale |
+Ordine di lettura consigliato prima di qualunque modifica:
 
-I permessi OPERATOR sono granulari per risorsa/azione e **sempre applicati server-side**.
+1. `README.md`
+2. `documentation/quickstart/agent_start_here.md` (agenti) o `documentation/quickstart/human_start_here.md` (umani)
+3. `documentation/README.md`
+4. `workflow/README.md`
+5. `prompts/README.md`
 
----
+Entry point onboarding rapido:
 
-## Documentazione
+- `documentation/quickstart/`
 
-| Documento | Scopo |
-|----------|-------|
-| `DEPLOY.md` | Guida completa al deployment (locale → produzione) |
-| `R2A_full-ai-context.md` | Contesto narrativo completo per AI/umani |
-| `PROMPT.md` | Modalità operative per agenti coding |
-| `agent-workspace/README.md` | Base di conoscenza esecutiva agenti |
-| `workflow/README.md` | Come studiare la metodologia caso studio |
+Contesto completo per analisi estese/chat LLM esterne:
 
----
+- `documentation/R2A_full-ai-context.md`
 
 ## Validazione
 
-Verifica sempre le modifiche con:
-
 ```bash
-npm run lint    # ESLint
-npm run build   # Build produzione Next.js
+npm run lint
+npm test
+npm run build
 ```
 
----
+## Note di Governance
 
-## Deployment
-
-Vedi **`DEPLOY.md`** per la guida step-by-step completa che copre:
-
-1. Setup locale con MongoDB
-2. Configurazione MongoDB Atlas
-3. Deployment Vercel
-4. Variabili d'ambiente
-5. Configurazione dominio
-6. Checklist sicurezza
-7. Troubleshooting
-
----
-
-## Regole Open Source
-
-- Non committare mai credenziali reali nei file `.env*`
-- Mantieni codice e documentazione allineati nello stesso change set
-- Rimuovi riferimenti obsoleti quando i percorsi dell'architettura cambiano
-- Tratta questo repository sia come codebase production-grade che come artefatto educativo pubblico
-
----
-
-## Licenza
-
-Questo progetto è rilasciato sotto licenza **Ready2Agent License**.
-
-Vedere il file [LICENSE.md](LICENSE.md) per i termini completi.
-
-### Termini in Sintesi
-
-**Permesso**: Usa, copia, modifica e distribuisci per uso personale e studio.
-
-**Divieto**: Non è consentito vendere il software o prodotti derivati per scopi commerciali.
-
-**Obbligo**: Menziona Ready2Agent e collega al repository GitHub quando lo utilizzi.
-
----
+- Nessuna credenziale reale nei file `.env*`
+- Codice e documentazione vanno aggiornati nello stesso ciclo
+- Ogni refactor di path deve includere riallineamento link interni
 
 ## Link
 
-- **GitHub**: https://github.com/Sh1nig4my/framework.ready2agent
-- **Licenza**: [LICENSE.md](LICENSE.md)
-- **Documentazione**: Vedere i file nella root e cartella `agent-workspace/`
-
----
-
-*Ready2Agent - Il framework che costruisce se stesso.*
+- GitHub: https://github.com/Sh1nig4my/framework.ready2agent
+- Licenza: `LICENSE.md`
+- Deploy: `DEPLOY.md`

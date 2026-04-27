@@ -6,11 +6,13 @@
 >
 > Per navigazione operativa, usa la nuova struttura documentale:
 >
-> - **Source of truth operativa**: `agent-workspace/operational/spec/`
-> - **Navigazione modulare**: `agent-workspace/operational/spec/README.md`
-> - **Documentazione umani**: `agent-workspace/project-docs/`
+> - **Source of truth operativa**: `documentation/operational/spec/`
+> - **Navigazione modulare**: `documentation/operational/spec/README.md`
+> - **Documentazione umani**: `documentation/project-docs/`
 >
-> Questo file monolitico non viene più aggiornato. Tutte le modifiche alla spec devono essere fatte nei file della cartella `operational/spec/`.
+> Questo file monolitico non viene piu aggiornato. Tutte le modifiche alla spec devono essere fatte nei file della cartella `documentation/operational/spec/`.
+
+> Nota workflow: questo documento e l'input requisito storico da cui e partita la realizzazione in `workflow/R2A-integration/`.
 
 ---
 

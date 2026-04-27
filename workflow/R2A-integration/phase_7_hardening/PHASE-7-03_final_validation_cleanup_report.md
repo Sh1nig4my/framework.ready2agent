@@ -13,9 +13,9 @@ Dimostrare la conformita alla spec e lasciare il repository privo di residui leg
 ## Input
 
 - Leggere:
-  - `agent-workspace/operational/spec/README.md`
-  - `agent-workspace/operational/alignment/README.md`
-  - `agent-workspace/operational/execution/README.md`
+  - `documentation/operational/spec/README.md`
+  - `documentation/operational/alignment/README.md`
+  - `documentation/operational/execution/README.md`
   - repository completo nelle aree toccate
 - Modificare:
   - file obsoleti residui

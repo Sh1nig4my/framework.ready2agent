@@ -30,9 +30,9 @@ Creare `src/server/config/env.ts` come unico punto di parsing/validazione della 
 Implementa ONLY il task [PHASE-1-01] di Ready2Agent.
 
 Source of truth:
-- agent-workspace/operational/spec/README.md
-- agent-workspace/operational/alignment/README.md
-- agent-workspace/operational/execution/README.md
+- documentation/operational/spec/README.md
+- documentation/operational/alignment/README.md
+- documentation/operational/execution/README.md
 
 Leggi prima tutti i file elencati nel task file `workflow/R2A-integration/phase_1_foundation/PHASE-1-01_env_validation.md`.
 

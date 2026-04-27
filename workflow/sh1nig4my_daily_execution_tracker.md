@@ -2,22 +2,22 @@
 
 ## Metadata
 
-- Last Updated: 2026-04-14
+- Last Updated: 2026-04-27
 
 Tracker operativo globale per l'avanzamento di Ready2Agent (R2A).
 
 Riferimenti principali:
 - `workflow/R2A-integration/README.md`
 - `workflow/R2A-integration/00_ready2agent_master_execution_index.md`
-- `agent-workspace/operational/spec/README.md`
-- `agent-workspace/operational/alignment/README.md`
+- `documentation/operational/spec/README.md`
+- `documentation/operational/alignment/README.md`
 
 Nota case study:
 - questo tracker documenta uno storico reale e riusabile per mostrare come mantenere coerenza tra task, codice e documentazione in progetti guidati da agenti.
 
 ## Stato generale
 
-- Data: 2026-04-14
+- Data: 2026-04-27
 - Owner: OpenCode
 - Reviewer:
 - Tag: execution

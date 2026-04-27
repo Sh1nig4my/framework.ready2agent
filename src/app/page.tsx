@@ -58,7 +58,7 @@ const pillars = [
   {
     title: "Il Metodo Agent-Native",
     description:
-      "Gli agenti AI non sono dipendenti: sono collaboratori con contesto. agent-workspace contiene regole, workflow documenta ogni task, ogni cambiamento ha traccia.",
+      "Gli agenti AI non sono dipendenti: sono collaboratori con contesto. documentation/ contiene regole, workflow/ documenta ogni task, ogni cambiamento ha traccia.",
     icon: ActivityIcon,
     accent: "blue",
     details: [
@@ -269,7 +269,7 @@ export default async function HomePage() {
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            {pillars.map((pillar, index) => {
+            {pillars.map((pillar) => {
               const Icon = pillar.icon;
               return (
                 <Card

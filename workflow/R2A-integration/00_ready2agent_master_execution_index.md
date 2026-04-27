@@ -2,16 +2,16 @@
 
 ## Metadata
 
-- Last Updated: 2026-04-14
+- Last Updated: 2026-04-27
 
 Indice maestro operativo per l'esecuzione task-by-task di Ready2Agent (R2A).
 
 Questo indice e anche un artefatto di case study: puo essere forkato come modello di governance operativa per progetti AI-native agent-assisted.
 
 Documenti sorgente obbligatori per ogni task:
-- `agent-workspace/operational/spec/README.md`
-- `agent-workspace/operational/alignment/README.md`
-- `agent-workspace/operational/execution/README.md`
+- `documentation/operational/spec/README.md`
+- `documentation/operational/alignment/README.md`
+- `documentation/operational/execution/README.md`
 
 Regole d'uso:
 - eseguire un solo task per volta
