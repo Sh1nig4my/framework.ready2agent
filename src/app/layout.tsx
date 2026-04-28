@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
+import type { CSSProperties } from "react";
 import { CookieBanner } from "@/components/compliance/cookie-banner";
+import { r2aTheme } from "@/config/r2a-theme";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -30,8 +32,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const themeStyle = {
+    "--r2a-brand-primary": r2aTheme.brand.primary,
+    "--r2a-brand-secondary": r2aTheme.brand.secondary,
+    "--r2a-brand-accent": r2aTheme.brand.accent,
+    "--r2a-surface-background": r2aTheme.surface.background,
+    "--r2a-surface-muted": r2aTheme.surface.muted,
+    "--r2a-surface-card": r2aTheme.surface.card,
+    "--r2a-surface-border": r2aTheme.surface.border,
+    "--r2a-text-primary": r2aTheme.text.primary,
+    "--r2a-text-muted": r2aTheme.text.muted,
+    "--r2a-text-inverse": r2aTheme.text.inverse,
+    "--r2a-state-success": r2aTheme.state.success,
+    "--r2a-state-warning": r2aTheme.state.warning,
+    "--r2a-state-danger": r2aTheme.state.danger,
+  } as CSSProperties;
+
   return (
-    <html data-scroll-behavior="smooth" lang="it">
+    <html data-scroll-behavior="smooth" lang="it" style={themeStyle}>
       <body
         className={`${bodyFont.variable} ${headingFont.variable} min-h-screen bg-[var(--color-background)] text-[var(--color-foreground)] antialiased`}
       >

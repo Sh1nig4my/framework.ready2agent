@@ -39,3 +39,11 @@ npm run lint
 npm test
 npm run build
 ```
+
+## Personalizzazione Colori UI
+
+Per cambiare i colori base del progetto clonato modifica `src/config/r2a-theme.ts`.
+
+- personalizzabile: token colore superficiali (`brand`, `surface`, `text`, `state`)
+- non personalizzabile: layout, gerarchie UI e logica applicativa
+- modello: configurazione statica a codice (non plugin, non DB, non per-utente)

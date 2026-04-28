@@ -27,3 +27,11 @@ Questa sezione e vincolante per architettura, sicurezza, accesso, validazione e 
 3. `documentation/core/auth-api-validation/03_auth_api_validation.md`
 4. `documentation/core/storage-security/04_storage_security_compliance.md`
 5. `documentation/core/definition-of-done/05_constraints_dod.md`
+
+## R2A Visual Theme Tokens
+
+Il Core include una configurazione grafica minima in `src/config/r2a-theme.ts` per personalizzare colori superficiali.
+
+- token modificabili: `brand`, `surface`, `text`, `state`
+- integrazione: CSS custom properties globali (`src/app/globals.css`)
+- confini: layout e logica runtime invariati; nessuna dipendenza da `extensions/`; nessuna configurazione runtime via DB

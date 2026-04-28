@@ -1,13 +1,13 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
+  --background: var(--color-background);
+  --foreground: var(--color-surface);
 
-  --text-primary: #000;
-  --text-secondary: #666;
+  --text-primary: var(--color-foreground);
+  --text-secondary: var(--color-foreground-muted);
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
+  --button-primary-hover: var(--color-primary-strong);
+  --button-secondary-hover: var(--color-surface-soft);
+  --button-secondary-border: var(--color-border);
 
   display: flex;
   min-height: 100vh;
@@ -128,14 +128,14 @@ a.secondary {
   }
 
   .page {
-    --background: #000;
-    --foreground: #000;
+    --background: var(--color-foreground);
+    --foreground: var(--color-foreground);
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
+    --text-primary: var(--color-surface);
+    --text-secondary: color-mix(in srgb, var(--color-surface) 62%, black);
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+    --button-primary-hover: color-mix(in srgb, var(--color-surface) 82%, black);
+    --button-secondary-hover: color-mix(in srgb, var(--color-foreground) 88%, black);
+    --button-secondary-border: color-mix(in srgb, var(--color-foreground) 88%, black);
   }
 }

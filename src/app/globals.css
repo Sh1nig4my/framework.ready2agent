@@ -1,33 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --color-blue: #4c6ef5;
-  --color-blue-strong: #2f4cc9;
-  --color-blue-soft: #e8eeff;
-  --color-azure: #35a4ff;
-  --color-azure-strong: #167dd6;
-  --color-azure-soft: #e4f4ff;
+  --r2a-brand-primary: #4c6ef5;
+  --r2a-brand-secondary: #2f4cc9;
+  --r2a-brand-accent: #35a4ff;
+  --r2a-surface-background: #f5f8fd;
+  --r2a-surface-muted: #f8faff;
+  --r2a-surface-card: #ffffff;
+  --r2a-surface-border: #d9e2f2;
+  --r2a-text-primary: #1a2337;
+  --r2a-text-muted: #6a7790;
+  --r2a-text-inverse: #ffffff;
+  --r2a-state-success: #33a26a;
+  --r2a-state-warning: #d6a03a;
+  --r2a-state-danger: #cb5a8f;
+
+  --color-blue: var(--r2a-brand-primary);
+  --color-blue-strong: var(--r2a-brand-secondary);
+  --color-blue-soft: color-mix(in srgb, var(--r2a-brand-primary) 14%, white);
+  --color-azure: var(--r2a-brand-accent);
+  --color-azure-strong: color-mix(in srgb, var(--r2a-brand-accent) 78%, black);
+  --color-azure-soft: color-mix(in srgb, var(--r2a-brand-accent) 14%, white);
   --color-violet: #7b61ff;
   --color-violet-strong: #5a42d8;
   --color-violet-soft: #ede8ff;
-  --color-success: #33a26a;
-  --color-success-strong: #1f7a4b;
-  --color-success-soft: #e7f7ee;
-  --color-warning: #d6a03a;
-  --color-warning-strong: #9f6d17;
-  --color-warning-soft: #fff4df;
-  --color-pink: #cb5a8f;
-  --color-pink-soft: #fdebf3;
+  --color-success: var(--r2a-state-success);
+  --color-success-strong: color-mix(in srgb, var(--r2a-state-success) 74%, black);
+  --color-success-soft: color-mix(in srgb, var(--r2a-state-success) 14%, white);
+  --color-warning: var(--r2a-state-warning);
+  --color-warning-strong: color-mix(in srgb, var(--r2a-state-warning) 74%, black);
+  --color-warning-soft: color-mix(in srgb, var(--r2a-state-warning) 20%, white);
+  --color-pink: var(--r2a-state-danger);
+  --color-pink-soft: color-mix(in srgb, var(--r2a-state-danger) 16%, white);
 
-  --color-background: #f5f8fd;
-  --color-background-strong: #edf3ff;
-  --color-surface: #ffffff;
-  --color-surface-soft: #f8faff;
+  --color-background: var(--r2a-surface-background);
+  --color-surface: var(--r2a-surface-card);
+  --color-surface-soft: var(--r2a-surface-muted);
   --color-sidebar: rgba(255, 255, 255, 0.96);
-  --color-border: #d9e2f2;
-  --color-border-strong: #c0cde5;
-  --color-foreground: #1a2337;
-  --color-foreground-muted: #6a7790;
+  --color-border: var(--r2a-surface-border);
+  --color-border-strong: color-mix(in srgb, var(--r2a-surface-border) 82%, black);
+  --color-foreground: var(--r2a-text-primary);
+  --color-foreground-muted: var(--r2a-text-muted);
 
   --color-primary: var(--color-blue);
   --color-primary-strong: var(--color-blue-strong);

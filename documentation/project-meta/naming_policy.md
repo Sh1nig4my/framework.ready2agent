@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- **Ultimo aggiornamento**: 2026-04-15
+- **Ultimo aggiornamento**: 2026-04-28
 - **Pubblico**: agenti di coding, contributor
 - **Status**: attivo
 
@@ -189,14 +189,16 @@ class ApiError extends Error {
 ```css
 /* ✅ USA kebab-case */
 :root {
-  --color-primary: #3b82f6;
-  --color-background: #fafafa;
+  --r2a-brand-primary: #4c6ef5;
+  --r2a-surface-background: #f5f8fd;
+  --color-primary: var(--r2a-brand-primary);
+  --color-background: var(--r2a-surface-background);
   --font-size-lg: 1.125rem;
 }
 
 /* ✅ USA semantic naming */
---color-success: #22c55e;
---color-error: #ef4444;
+--color-success: var(--r2a-state-success);
+--color-pink: var(--r2a-state-danger);
 ```
 
 ### 5.2 Component Classes

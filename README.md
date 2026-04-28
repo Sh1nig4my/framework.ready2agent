@@ -63,6 +63,16 @@ ready2agent/
 
 Controller (`src/app/api/*`) -> Service (`src/server/service/*`) -> Repository (`src/server/repository/*`) -> MongoDB.
 
+## Configurazione Tema UI (Core)
+
+Ready2Agent espone una configurazione tema minima e statica in `src/config/r2a-theme.ts`.
+
+- scope: token colore superficiali (`brand`, `surface`, `text`, `state`)
+- obiettivo: personalizzazione rapida dei colori senza toccare layout o logica
+- limiti: non e un sistema plugin, non salva su DB, non supporta tema per utente/ruolo
+
+Le variabili CSS globali in `src/app/globals.css` leggono questi token.
+
 ## Ordine di Lettura
 
 Ordine consigliato prima di qualunque modifica:

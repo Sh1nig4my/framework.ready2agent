@@ -9,7 +9,7 @@
   const color = {
     violet: "linear-gradient(90deg, var(--color-violet-strong), var(--color-violet))",
     green: "linear-gradient(90deg, var(--color-success-strong), var(--color-success))",
-    pink: "linear-gradient(90deg, #b8477d, var(--color-pink))",
+    pink: "linear-gradient(90deg, var(--color-primary-strong), var(--color-pink))",
     gold: "linear-gradient(90deg, var(--color-warning-strong), var(--color-warning))",
     blue: "linear-gradient(90deg, var(--color-blue-strong), var(--color-blue))",
     azure: "linear-gradient(90deg, var(--color-azure-strong), var(--color-azure))",

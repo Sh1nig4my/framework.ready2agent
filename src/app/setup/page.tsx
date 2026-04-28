@@ -16,7 +16,7 @@ export default async function SetupPage() {
     <PublicShell>
       <div className="flex flex-1 items-center justify-center py-10">
         <div className="grid w-full max-w-6xl overflow-hidden rounded-[36px] border border-[var(--color-border)] bg-white shadow-[0_24px_90px_rgba(15,23,42,0.08)] lg:grid-cols-[0.92fr_1.08fr]">
-          <section className="bg-[linear-gradient(150deg,#0f766e,#0f172a,#1d4ed8)] p-8 text-white md:p-10">
+          <section className="bg-[linear-gradient(150deg,var(--color-success-strong),var(--color-foreground),var(--color-primary))] p-8 text-white md:p-10">
             <p className="text-sm uppercase tracking-[0.24em] text-white/70">First-run setup</p>
               <h1 className="mt-6 max-w-lg text-4xl font-bold leading-tight">
                 Inizializza Ready2Agent creando il primo account SUPER sul database vuoto.

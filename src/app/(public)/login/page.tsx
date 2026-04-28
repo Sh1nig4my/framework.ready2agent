@@ -15,7 +15,7 @@ export default async function LoginPage() {
     <PublicShell>
       <div className="flex flex-1 items-center justify-center py-10">
         <div className="surface-card grid w-full max-w-5xl overflow-hidden lg:grid-cols-[0.95fr_1.05fr]">
-          <section className="bg-[linear-gradient(160deg,#6d28d9,#8b5cf6,#ec4899)] p-8 text-white md:p-10">
+          <section className="bg-[linear-gradient(160deg,var(--color-violet-strong),var(--color-violet),var(--color-pink))] p-8 text-white md:p-10">
             <p className="text-sm uppercase tracking-[0.22em] text-white/70">Ready2Agent Access</p>
             <h1 className="mt-6 text-4xl font-bold leading-tight">Entra nel framework e riprendi da dove eri rimasto.</h1>
             <p className="mt-4 max-w-md text-sm leading-7 text-white/80">

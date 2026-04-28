@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- **Ultimo aggiornamento**: 2026-04-15
+- **Ultimo aggiornamento**: 2026-04-28
 - **Pubblico**: lettori, developer, stakeholder
 - **Status**: attivo
 
@@ -257,19 +257,18 @@ Tutte le API restituiscono:
 - Role-awareness senza caos visivo
 - Terminologia stabile tra UI e documentazione
 
-### 6.2 Palette CSS
+### 6.2 Theme Tokens e CSS Variables
 
-```css
---color-primary: #3b82f6;
---color-primary-strong: #1d4ed8;
---color-primary-soft: #dbeafe;
---color-success: #22c55e;
---color-warning: #eab308;
---color-error: #ef4444;
---color-background: #fafafa;
---color-foreground: #18181b;
---color-foreground-muted: #71717a;
-```
+Ready2Agent espone una configurazione tema minima e statica in `src/config/r2a-theme.ts`.
+
+Categorie ufficiali modificabili:
+
+- `brand` (primary, secondary, accent)
+- `surface` (background, muted, card, border)
+- `text` (primary, muted, inverse)
+- `state` (success, warning, danger)
+
+I token vengono mappati sulle variabili CSS globali in `src/app/globals.css` (es. `--color-primary`, `--color-background`, `--color-foreground`) per mantenere la UI personalizzabile in superficie senza cambiare layout o logica applicativa.
 
 ### 6.3 Tipografia
 

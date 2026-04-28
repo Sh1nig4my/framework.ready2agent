@@ -16,7 +16,7 @@ export default async function InvitePage({
     <PublicShell>
       <div className="flex flex-1 items-center justify-center py-10">
         <div className="surface-card grid w-full max-w-5xl overflow-hidden lg:grid-cols-[0.95fr_1.05fr]">
-          <section className="bg-[linear-gradient(160deg,#2f4cc9,#35a4ff,#7b61ff)] p-8 text-white md:p-10">
+          <section className="bg-[linear-gradient(160deg,var(--color-primary-strong),var(--color-azure),var(--color-violet))] p-8 text-white md:p-10">
             <p className="text-sm uppercase tracking-[0.22em] text-white/70">Ready2Agent Invite</p>
             <h1 className="mt-6 text-4xl font-bold leading-tight">Attiva il tuo accesso e completa l&apos;onboarding.</h1>
             <p className="mt-4 max-w-md text-sm leading-7 text-white/80">
