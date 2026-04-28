@@ -52,7 +52,7 @@
 - `src/tests/mongo-env-guardrails.test.ts`
 - `src/scripts/run-tests.ts`
 - `workflow/R2A-integration/phase_7_hardening/STATUS.md`
-- `workflow/sh1nig4my_daily_execution_tracker.md`
+- `workflow/ready2agent_daily_execution_tracker.md`
 
 ## Esito finale
 

@@ -96,7 +96,7 @@ OGNI TASK HA UN FILE:
 workflow/R2A-integration/phase_X/PHASE-X-XX_*.md
 
 OGNI TASK AGGIORNA:
-- Tracker (sh1nig4my_daily_execution_tracker.md)
+- Tracker (ready2agent_daily_execution_tracker.md)
 - Status (phase_X/STATUS.md)
 ```
 

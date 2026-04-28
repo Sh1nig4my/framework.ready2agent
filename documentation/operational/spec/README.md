@@ -18,7 +18,7 @@ Definisce in modo non ambiguo:
 
 ## Source
 
-File monolitico legacy: `workflow/requirements/ready2agent_master_spec_v2_1.md` (deprecato).
+File monolitico legacy: `workflow/requirements/r2a-core/ready2agent_master_spec_v2_1.md` (deprecato).
 
 Questa sezione scompone la spec in moduli navigabili per uso operativo.
 

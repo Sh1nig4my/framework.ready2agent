@@ -2,56 +2,64 @@
 
 ## Metadati
 
-- Ultimo aggiornamento: 2026-04-27
+- Ultimo aggiornamento: 2026-04-29
 - Stato: attivo
 
 ## Scopo
 
-La cartella `workflow/` contiene la metodologia esecutiva usata per sviluppare Ready2Agent in modo progressivo, tracciabile e verificabile.
+La cartella `workflow/` ospita il sistema operativo di esecuzione multi-flusso del repository.
 
-Questa metodologia non e limitata a R2A: puo essere riusata in altri progetti per gestire evoluzioni, implementazioni importanti e refactor estesi con task piccoli e sequenziali.
+Modello operativo:
 
-## Struttura
+- `workflow/maintenance-workflow/` = toolkit agnostico (prompt + template)
+- `workflow/requirements/<branch>/` = input per singolo ramo implementativo
+- `workflow/<FLOW_NAME>/` = esecuzione concreta del ramo (capitoli/task/status/tracker locale)
+- `workflow/<project-name>_daily_execution_tracker.md` = tracker globale di tutti i flussi aperti
+
+In questo repository il file e `workflow/ready2agent_daily_execution_tracker.md`.
+
+## Struttura consigliata
 
 ```text
 workflow/
 ├── README.md
-├── sh1nig4my_daily_execution_tracker.md
+├── <project-name>_daily_execution_tracker.md
+├── maintenance-workflow/
+│   ├── README.md
+│   ├── prompt-01-generate-integration-chapters.md
+│   ├── prompt-02-generate-integration-tasks.md
+│   └── flow-execution-tracker.md
 ├── requirements/
-│   └── ready2agent_master_spec_v2_1.md
-└── R2A-integration/
+│   ├── README.md
+│   ├── r2a-core/
+│   └── r2a-enterprise-userdetail/
+├── R2A-integration/
+│   ├── README.md
+│   ├── flow-execution-tracker.md
+│   └── phase_*/
+└── <FLOW_NAME>/
     ├── README.md
-    └── phase_*/
+    ├── flow-execution-tracker.md
+    └── <chapter>/
 ```
 
-## Ruolo di `workflow/requirements/`
+## Regole operative
 
-`workflow/requirements/` contiene i materiali di input che avviano un workflow:
+- un task alla volta nel flusso attivo;
+- nessuna anticipazione di task dipendenti;
+- aggiornamento contestuale: task file + status capitolo + tracker locale + tracker globale;
+- validazione finale per task implementativi: `npm run lint`, `npm test`, `npm run build`.
 
-- file testuali di requisito;
-- eventuali PDF;
-- artefatti iniziali di analisi.
+## Uso rapido
 
-Nel caso di Ready2Agent, `workflow/R2A-integration/` e stato costruito partendo dal requisito iniziale ora archiviato in `workflow/requirements/ready2agent_master_spec_v2_1.md`.
-
-## Ruolo di `workflow/R2A-integration/`
-
-`workflow/R2A-integration/` documenta la realizzazione effettiva task-by-task:
-
-- indice esecutivo;
-- task per fase;
-- stato avanzamento;
-- report di hardening.
-
-## Regole di utilizzo
-
-- un task alla volta;
-- rispetto delle dipendenze tra fasi;
-- aggiornamento stato e tracker nello stesso ciclo;
-- riallineamento documentale contestuale.
+1. Leggi `documentation/README.md` e sezione operational.
+2. Scegli il branch requisito in `workflow/requirements/<branch>/`.
+3. Usa `workflow/maintenance-workflow/prompt-01-generate-integration-chapters.md`.
+4. Poi usa `workflow/maintenance-workflow/prompt-02-generate-integration-tasks.md`.
+5. Esegui task nel flow creato sotto `workflow/<FLOW_NAME>/`.
 
 ## Collegamenti
 
 - contesto documentale: `documentation/README.md`
-- prompt operativi: `prompts/README.md`
-- indice operativo R2A: `workflow/R2A-integration/README.md`
+- regole esecutive: `documentation/operational/execution/00_rules_and_ordering.md`
+- contract confini: `documentation/project-meta/workspace_workflow_alignment_contract.md`

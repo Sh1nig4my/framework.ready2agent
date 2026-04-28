@@ -287,9 +287,9 @@ Procedi quando sbloccato
 
 ## 9. Links Utili
 
-- Master index: `workflow/R2A-integration/00_ready2agent_master_execution_index.md`
+- Master index: `workflow/R2A-integration/README.md`
 - Workflow hub: `workflow/R2A-integration/README.md`
-- Tracker giornaliero: `workflow/sh1nig4my_daily_execution_tracker.md`
+- Tracker giornaliero: `workflow/ready2agent_daily_execution_tracker.md`
 
 ---
 

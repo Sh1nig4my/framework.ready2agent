@@ -18,7 +18,7 @@ Eseguire una revisione profonda dell'intero repository per riallineare codice, d
 5. Leggi `documentation/operational/alignment/README.md`.
 6. Leggi `documentation/operational/execution/README.md`.
 7. Leggi `workflow/README.md`.
-8. Leggi `workflow/requirements/ready2agent_master_spec_v2_1.md`.
+8. Leggi il branch requisiti in `workflow/requirements/<branch>/`.
 9. Mappa path e riferimenti obsoleti.
 10. Correggi codice e documentazione nello stesso ciclo.
 11. Esegui validazioni.
