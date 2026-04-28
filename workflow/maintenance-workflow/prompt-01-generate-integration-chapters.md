@@ -30,7 +30,7 @@ Generare o riallineare la struttura macro di integrazione a capitoli, senza crea
 - Non creare file `task-*.md` in questo prompt.
 - Non implementare codice applicativo.
 - Non cambiare scope dei requirement.
-- Rispettare spec e regole in `documentation/documentation/core/` e `documentation/documentation/method/execution-rules/`.
+- Rispettare spec e regole in `documentation/core/` e `documentation/method/execution-rules/`.
 - Mantenere naming in kebab-case e numerazione capitoli a due cifre (`01-`, `02-`, ...).
 - Non creare capitoli dentro `workflow/maintenance-workflow/`.
 - Il tracker globale deve chiamarsi `workflow/<project-name>_daily_execution_tracker.md`.

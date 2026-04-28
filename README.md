@@ -88,6 +88,12 @@ Contesto esteso per analisi complete:
 - `prompts/` -> interfaccia operativa per avviare lavoro agentico
 - `extensions/` -> area opzionale futura per plugin separati dal Core
 
+## Percorsi di apprendimento
+
+- Percorso agenti: `documentation/quickstart/agent_start_here.md` -> `documentation/core/` -> `documentation/method/` -> `workflow/` -> `prompts/`
+- Percorso umano tecnico: `documentation/quickstart/human_start_here.md` -> `documentation/core/` -> `documentation/method/` -> `workflow/README.md`
+- Spec didattica viva del Core: `workflow/requirements/r2a-core/`
+
 ## Validazione
 
 ```bash

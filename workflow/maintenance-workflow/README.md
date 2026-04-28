@@ -48,8 +48,8 @@ Convenzione tracker globale:
 
 1. `README.md`
 2. `documentation/quickstart/agent_start_here.md`
-3. `documentation/method/README.md`
-4. `documentation/core/README.md`
+3. `documentation/core/README.md`
+4. `documentation/method/README.md`
 5. `documentation/method/alignment-model/README.md`
 6. `documentation/method/execution-rules/README.md`
 7. `workflow/README.md`
@@ -131,14 +131,16 @@ Dopo ogni task completato aggiorna sempre:
 
 Leggi prima:
 
-1. `documentation/`
-2. `workflow/requirements/<branch>/`
-3. `workflow/README.md`
-4. `workflow/maintenance-workflow/README.md`
-5. `workflow/<project-name>_daily_execution_tracker.md`
-6. `workflow/<FLOW_NAME>/flow-execution-tracker.md`
-7. `workflow/<FLOW_NAME>/README.md`
-8. i `status.md` dei capitoli dentro `workflow/<FLOW_NAME>/`
+1. `documentation/README.md`
+2. `documentation/core/README.md`
+3. `documentation/method/README.md`
+4. `workflow/requirements/<branch>/`
+5. `workflow/README.md`
+6. `workflow/maintenance-workflow/README.md`
+7. `workflow/<project-name>_daily_execution_tracker.md`
+8. `workflow/<FLOW_NAME>/flow-execution-tracker.md`
+9. `workflow/<FLOW_NAME>/README.md`
+10. i `status.md` dei capitoli dentro `workflow/<FLOW_NAME>/`
 
 Dopo aver letto questi file:
 

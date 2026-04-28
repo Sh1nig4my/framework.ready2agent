@@ -36,3 +36,7 @@ workflow/requirements/
 
 - `workflow/requirements/r2a-core/`
 - `workflow/requirements/r2a-enterprise-userdetail/`
+
+## Nota su r2a-core
+
+`workflow/requirements/r2a-core/` e una spec didattica viva: va mantenuta allineata riga-per-riga allo stato corrente di R2A.

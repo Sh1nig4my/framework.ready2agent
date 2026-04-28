@@ -18,6 +18,7 @@ Questa sezione e vincolante per architettura, sicurezza, accesso, validazione e 
 - `auth-api-validation/` -> auth, contratti API, validazione
 - `storage-security/` -> storage, security baseline, deploy e troubleshooting
 - `definition-of-done/` -> vincoli e criteri tecnici di completamento
+- `user-detail-blueprint.md` -> blueprint documentale per ramo enterprise opzionale
 
 ## Read Order Consigliato
 

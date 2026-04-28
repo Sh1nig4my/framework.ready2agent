@@ -30,8 +30,8 @@ Per agenti:
 3. `documentation/README.md`
 4. `documentation/core/README.md`
 5. `documentation/method/README.md`
-8. `workflow/README.md`
-9. `prompts/README.md`
+6. `workflow/README.md`
+7. `prompts/README.md`
 
 Per contributor umani:
 

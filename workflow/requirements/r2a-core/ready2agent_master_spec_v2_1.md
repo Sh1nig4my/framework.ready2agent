@@ -1,18 +1,18 @@
 # Ready2Agent Master Specification v2.1
 
-## ⚠️ DEPRECATO
+## Nota didattica viva
 
-> **Nota importante**: Questo file è mantenuto per riferimento storico ma è **DEPRECATO**.
+> Questo documento e una **spec didattica viva** del ramo `r2a-core`.
 >
-> Per navigazione operativa, usa la nuova struttura documentale:
+> Deve rimanere **allineato riga-per-riga** allo stato corrente di Ready2Agent.
 >
-> - **Source of truth operativa**: `documentation/documentation/core/`
-> - **Navigazione modulare**: `documentation/core/README.md`
-> - **Documentazione umani**: `documentation/core/`
+> Riferimenti operativi collegati:
 >
-> Questo file monolitico non viene piu aggiornato. Tutte le modifiche alla spec devono essere fatte nei file della cartella `documentation/documentation/core/`.
-
-> Nota workflow: questo documento e l'input requisito storico da cui e partita la realizzazione in `workflow/R2A-integration/`.
+> - Vincoli Core modulari: `documentation/core/`
+> - Metodo operativo agent-native: `documentation/method/`
+> - Esecuzioni concrete: `workflow/`
+>
+> Regola di manutenzione: ogni modifica strutturale o di vincoli Core/Method richiede aggiornamento contestuale anche in questo file.
 
 ---
 

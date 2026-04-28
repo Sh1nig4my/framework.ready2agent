@@ -16,6 +16,8 @@ Modello operativo:
 - `workflow/<FLOW_NAME>/` = esecuzione concreta del ramo (capitoli/task/status/tracker locale)
 - `workflow/<project-name>_daily_execution_tracker.md` = tracker globale di tutti i flussi aperti
 
+Nota didattica: `workflow/requirements/r2a-core/` e una spec didattica viva, mantenuta allineata riga-per-riga allo stato corrente di R2A.
+
 In questo repository il file e `workflow/ready2agent_daily_execution_tracker.md`.
 
 ## Struttura consigliata

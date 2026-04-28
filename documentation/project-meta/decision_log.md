@@ -28,12 +28,22 @@ Registro sintetico delle **decisioni implementative e documentali ad alto impatt
 
 ## Entries
 
+### 2026-04-28 - Content and Learning Realignment baseline
+
+- **Area**: Documentazione, learning path, workflow requirements governance
+- **Decisione**: Avviato il riallineamento Content & Learning con audit globale link/percorsi; formalizzato `workflow/requirements/r2a-core/` come spec didattica viva da mantenere allineata riga-per-riga allo stato corrente.
+- **Motivazione**: Preservare valore didattico del metodo agentico reale evitando drift tra documentazione corrente e requirement branch Core.
+- **Impatto**: Corretti path incoerenti (`documentation/documentation/*`), uniformati riferimenti in workflow requirements/maintenance, introdotto README dedicato per `r2a-core` e chiarito il contratto di manutenzione continua.
+- **Documenti aggiornati**: `workflow/requirements/README.md`, `workflow/requirements/r2a-core/README.md`, `workflow/requirements/r2a-core/ready2agent_master_spec_v2_1.md`, `workflow/maintenance-workflow/prompt-01-generate-integration-chapters.md`, `documentation/R2A_full-ai-context.md`, `documentation/core/user-detail-blueprint.md`
+
+---
+
 ### 2026-04-28 - Tassonomia ufficiale R2A Core / Method / Extensions
 
 - **Area**: Architettura documentale, governance repository, prompt/workflow alignment
 - **Decisione**: Formalizzata la tassonomia `R2A = Core + Method + Extensions`; `src/` resta runtime Core, `documentation/` viene separata in `core/` e `method/`, `workflow/` resta layer execution instances, `prompts/` resta interfaccia operativa agenti, `extensions/` viene introdotta come area opzionale futura.
 - **Motivazione**: Rendere il repository pubblicabile, pulito e coerente senza deprecazioni, bridge o doppie strutture valide.
-- **Impatto**: Migrazione contenuti da struttura legacy a `documentation/core/` e `documentation/method/`, creazione `extensions/_template/`, rimozione `legacy operational area` e `legacy human-docs area`, aggiornamento ordine di lettura e riferimenti interni.
+- **Impatto**: Migrazione contenuti dalla struttura precedente a `documentation/core/` e `documentation/method/`, creazione `extensions/_template/`, rimozione delle aree documentali precedenti e aggiornamento ordine di lettura e riferimenti interni.
 - **Documenti aggiornati**: `README.md`, `documentation/README.md`, `documentation/core/*`, `documentation/method/*`, `documentation/quickstart/*`, `prompts/*`, `workflow/README.md`, `documentation/R2A_full-ai-context.md`, `documentation/project-meta/*`, `extensions/*`
 
 ---
@@ -51,9 +61,9 @@ Registro sintetico delle **decisioni implementative e documentali ad alto impatt
 ### 2026-04-15 - Nuova struttura documentale (ora `documentation/`)
 
 - **Area**: Documentazione, architettura documentale
-- **Decisione**: Ristrutturazione completa del workspace documentale (oggi `documentation/`) seguendo architettura 19.1/19.2/19.3 con nuove cartelle legacy documentale precedente e project-meta/
+- **Decisione**: Ristrutturazione completa del workspace documentale (oggi `documentation/`) seguendo architettura 19.1/19.2/19.3 con nuova separazione tra aree documentali operative e governance (`project-meta/`).
 - **Motivazione**: Migliorare organizzazione documentale per lettura IA, separare documentazione umani da quella operativa agenti, facilitare navigazione e manutenzione
-- **Impatto**: Nuova struttura documentale con 3 sezioni principali, legacy spec deprecata ma mantenuta per riferimento, tutti i file documentali riposizionati
+- **Impatto**: Nuova struttura documentale con 3 sezioni principali e riposizionamento completo dei file documentali.
 - **Documenti aggiornati**: documentation/README.md, documentation/core/*, documentation/method/*, documentation/project-meta/*
 
 ---

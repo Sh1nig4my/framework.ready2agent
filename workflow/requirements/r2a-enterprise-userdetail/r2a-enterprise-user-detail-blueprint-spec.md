@@ -1387,7 +1387,7 @@ Recommended docs to add/update:
 README.md
 documentation/quickstart/agent_start_here.md
 documentation/method/README.md
-documentation/documentation/core/user-detail-blueprint.md
+documentation/core/user-detail-blueprint.md
 documentation/project-meta/decision_log.md
 workflow/R2A-integration/* where relevant
 ```
