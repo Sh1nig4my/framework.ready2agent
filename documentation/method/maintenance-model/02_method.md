@@ -53,13 +53,13 @@ ITERAZIONE
 ### 3.1 Gerarchia Documentale
 
 ```
-1. SPEC (operational/spec/)
+1. SPEC (documentation/core/)
    → Cosa DEVE fare il sistema
 
-2. ALIGNMENT (operational/alignment/)
+2. ALIGNMENT (documentation/method/alignment-model/)
    → Cosa MANCA rispetto alla spec
 
-3. EXECUTION (operational/execution/)
+3. EXECUTION (documentation/method/execution-rules/)
    → Come FARLO nel giusto ordine
 
 4. WORKFLOW (workflow/R2A-integration/)

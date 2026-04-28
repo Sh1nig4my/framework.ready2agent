@@ -243,4 +243,4 @@ Questo approccio riduce dipendenze e vendor lock-in.
 
 ---
 
-*Per configurazione locale dettagliata, vedere `operational/setup/01_local_setup.md`.*
+*Per configurazione locale dettagliata, vedere `documentation/core/architecture/03_setup_locale.md`.*

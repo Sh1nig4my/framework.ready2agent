@@ -75,4 +75,4 @@ Ogni task deve chiudersi con una sezione "Prompt operativo" che includa:
 1. Elenco task creati per capitolo.
 2. Copertura requisiti (mappa requirement -> task).
 3. Aggiornamento stati capitolo/tracker locale/tracker globale.
-4. Evidenza coerenza con regole in `documentation/operational/execution/00_rules_and_ordering.md`.
+4. Evidenza coerenza con regole in `documentation/method/execution-rules/00_rules_and_ordering.md`.

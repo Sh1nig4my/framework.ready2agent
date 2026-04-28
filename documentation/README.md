@@ -2,18 +2,20 @@
 
 ## Metadata
 
-- Ultimo aggiornamento: 2026-04-27
+- Ultimo aggiornamento: 2026-04-28
 - Pubblico: agenti di coding e manutentori
 - Status: attivo
 
 ## Scopo
 
-`documentation/` (cartella Documentation) contiene tutta la documentazione ufficiale del progetto.
+`documentation/` contiene la documentazione ufficiale di Ready2Agent, organizzata secondo la tassonomia:
+
+`R2A = Core + Method + Extensions`
 
 ## Struttura
 
-- `documentation/project-docs/` -> documentazione progetto orientata agli umani
-- `documentation/operational/` -> vincoli e regole operative per agenti
+- `documentation/core/` -> regole e specifiche del Core runtime
+- `documentation/method/` -> regole e metodo agent-native
 - `documentation/project-meta/` -> governance, naming policy, decisioni
 - `documentation/quickstart/` -> onboarding rapido
 - `documentation/reviews/` -> report di manutenzione
@@ -26,18 +28,17 @@ Per agenti:
 1. `README.md`
 2. `documentation/quickstart/agent_start_here.md`
 3. `documentation/README.md`
-4. `documentation/operational/README.md`
-5. `documentation/operational/spec/README.md`
-6. `documentation/operational/alignment/README.md`
-7. `documentation/operational/execution/README.md`
-8. `workflow/README.md`
-9. `prompts/README.md`
+4. `documentation/core/README.md`
+5. `documentation/method/README.md`
+6. `workflow/README.md`
+7. `prompts/README.md`
 
 Per contributor umani:
 
 1. `README.md`
 2. `documentation/quickstart/human_start_here.md`
-3. `documentation/project-docs/README.md`
+3. `documentation/core/README.md`
+4. `documentation/method/README.md`
 
 Uso di `documentation/R2A_full-ai-context.md`:
 
@@ -47,6 +48,7 @@ Uso di `documentation/R2A_full-ai-context.md`:
 ## Source of Truth Hierarchy
 
 1. Comportamento runtime nel codice (`src/`)
-2. Vincoli e architettura in `documentation/operational/spec/`
-3. Esecuzione operativa in `workflow/R2A-integration/`
-4. Decision log in `documentation/project-meta/decision_log.md`
+2. Vincoli Core in `documentation/core/`
+3. Vincoli Method in `documentation/method/`
+4. Istanze esecutive in `workflow/`
+5. Decisioni di governance in `documentation/project-meta/decision_log.md`

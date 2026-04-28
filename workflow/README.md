@@ -2,7 +2,7 @@
 
 ## Metadati
 
-- Ultimo aggiornamento: 2026-04-29
+- Ultimo aggiornamento: 2026-04-28
 - Stato: attivo
 
 ## Scopo
@@ -15,6 +15,8 @@ Modello operativo:
 - `workflow/requirements/<branch>/` = input per singolo ramo implementativo
 - `workflow/<FLOW_NAME>/` = esecuzione concreta del ramo (capitoli/task/status/tracker locale)
 - `workflow/<project-name>_daily_execution_tracker.md` = tracker globale di tutti i flussi aperti
+
+Nota didattica: `workflow/requirements/r2a-core/` e una spec didattica viva, mantenuta allineata riga-per-riga allo stato corrente di R2A.
 
 In questo repository il file e `workflow/ready2agent_daily_execution_tracker.md`.
 
@@ -52,7 +54,7 @@ workflow/
 
 ## Uso rapido
 
-1. Leggi `documentation/README.md` e sezione operational.
+1. Leggi `documentation/README.md`, `documentation/core/README.md` e `documentation/method/README.md`.
 2. Scegli il branch requisito in `workflow/requirements/<branch>/`.
 3. Usa `workflow/maintenance-workflow/prompt-01-generate-integration-chapters.md`.
 4. Poi usa `workflow/maintenance-workflow/prompt-02-generate-integration-tasks.md`.
@@ -61,5 +63,8 @@ workflow/
 ## Collegamenti
 
 - contesto documentale: `documentation/README.md`
-- regole esecutive: `documentation/operational/execution/00_rules_and_ordering.md`
+- regole esecutive: `documentation/method/execution-rules/00_rules_and_ordering.md`
 - contract confini: `documentation/project-meta/workspace_workflow_alignment_contract.md`
+
+`documentation/method/` descrive il metodo.
+`workflow/` contiene le istanze operative concrete del metodo.

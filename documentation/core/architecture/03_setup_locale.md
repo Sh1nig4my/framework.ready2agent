@@ -273,4 +273,4 @@ OpenCode leggera:
 
 ---
 
-*Per problemi avanzati, vedere `project-docs/05_troubleshooting.md`.*
+*Per problemi avanzati, vedere `documentation/core/storage-security/13_troubleshooting.md`.*

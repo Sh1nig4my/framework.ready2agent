@@ -2,27 +2,22 @@
 
 ## Metadata
 
-- **Ultimo aggiornamento**: 2026-04-15
-- **Pubblico**: nuovi developer, agenti
-- **Status**: attivo
+- Ultimo aggiornamento: 2026-04-28
+- Pubblico: agenti, sviluppatori, reviewer
+- Status: attivo
 
 ## Scopo
 
-Onboarding rapido per:
-- Agenti di coding
-- Sviluppatori umani
+`documentation/quickstart/` e l'entrypoint di onboarding rapido con percorsi separati per agenti e contributor umani.
 
 ## File
 
-| File | Pubblico |
-|------|----------|
-| `agent_start_here.md` | Coding agent |
-| `human_start_here.md` | Sviluppatori umani |
+| File | Pubblico | Scopo |
+|------|----------|-------|
+| `agent_start_here.md` | Coding agent | Avvio operativo con read order e regole non negoziabili |
+| `human_start_here.md` | Contributor umani | Avvio rapido per comprendere struttura, metodo e comandi base |
 
-## Per Agenti
+## Quando usarlo
 
-Vedi `agent_start_here.md`
-
-## Per Umani
-
-Vedi `human_start_here.md`
+- Parti da `agent_start_here.md` se devi eseguire task implementativi o maintenance con agenti.
+- Parti da `human_start_here.md` se devi capire il progetto prima di contribuire manualmente.

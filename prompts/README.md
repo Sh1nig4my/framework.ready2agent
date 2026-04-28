@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- Last Updated: 2026-04-27
+- Last Updated: 2026-04-28
 - Scope: prompt operativi ufficiali per sviluppo e maintenance
 
 ## Filosofia
@@ -36,12 +36,11 @@ Lettura minima consigliata per avviare modifiche, senza caricare contesto eccess
 
 1. `README.md`
 2. `documentation/quickstart/agent_start_here.md`
-3. `documentation/operational/README.md`
-4. `documentation/operational/spec/README.md`
-5. `documentation/operational/alignment/README.md`
-6. `documentation/operational/execution/README.md`
-7. `workflow/README.md`
-8. file prompt scelto in `prompts/`
+3. `documentation/README.md`
+4. `documentation/core/README.md`
+5. `documentation/method/README.md`
+6. `workflow/README.md`
+7. file prompt scelto in `prompts/`
 
 Nota: `documentation/R2A_full-ai-context.md` resta un contesto completo per analisi estese/chat LLM esterne, non e richiesto in ogni avvio operativo.
 
@@ -53,12 +52,11 @@ Sostituisci `{{PROMPT_FILE}}` con il prompt che vuoi usare.
 Prima di modificare qualsiasi file, leggi in ordine:
 1) README.md
 2) documentation/quickstart/agent_start_here.md
-3) documentation/operational/README.md
-4) documentation/operational/spec/README.md
-5) documentation/operational/alignment/README.md
-6) documentation/operational/execution/README.md
-7) workflow/README.md
-8) prompts/{{PROMPT_FILE}}
+3) documentation/README.md
+4) documentation/core/README.md
+5) documentation/method/README.md
+6) workflow/README.md
+7) prompts/{{PROMPT_FILE}}
 
 Esegui poi il lavoro richiesto rispettando:
 - struttura standard con codice applicativo dentro src/
