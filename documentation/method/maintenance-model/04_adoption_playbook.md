@@ -70,13 +70,13 @@ Crea SPEC.md con:
 ### Step 3: Setup Folder Operativi
 
 ```
-operational/spec/:
+documentation/core/:
 - 01_vision.md
 - 02_architecture.md
 - 03_identity.md
 - etc.
 
-operational/alignment/:
+documentation/method/alignment-model/:
 - 01_current_state.md
 - 02_gaps.md
 - etc.

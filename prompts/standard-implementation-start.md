@@ -8,12 +8,11 @@ Avviare una modifica standard (feature, bugfix, refactor mirato) con percorso op
 
 1. `README.md`
 2. `documentation/quickstart/agent_start_here.md`
-3. `documentation/operational/README.md`
-4. `documentation/operational/spec/README.md`
-5. `documentation/operational/alignment/README.md`
-6. `documentation/operational/execution/README.md`
-7. `workflow/README.md`
-8. `prompts/README.md`
+3. `documentation/README.md`
+4. `documentation/core/README.md`
+5. `documentation/method/README.md`
+6. `workflow/README.md`
+7. `prompts/README.md`
 
 Nota: `documentation/R2A_full-ai-context.md` e un contesto completo per analisi estese/chat LLM esterne; non e necessario leggerlo a ogni task operativo.
 

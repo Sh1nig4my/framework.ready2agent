@@ -233,4 +233,4 @@ Per small team: Vercel Free + Atlas M10.
 
 ---
 
-*Per troubleshooting avanzato, vedere `project-docs/05_troubleshooting.md`.*
+*Per troubleshooting avanzato, vedere `documentation/core/storage-security/13_troubleshooting.md`.*

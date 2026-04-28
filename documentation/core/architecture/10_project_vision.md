@@ -350,4 +350,4 @@ Il sistema è completo quando sono verificati:
 ---
 
 *Questo documento è parte della documentazione umana di Ready2Agent.
-Per vincoli tecnici esecutivi, consultare `operational/spec/`.*
+Per vincoli tecnici esecutivi, consultare `documentation/core/`.*

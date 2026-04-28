@@ -13,17 +13,17 @@ Eseguire una revisione profonda dell'intero repository per riallineare codice, d
 
 1. Leggi `README.md`.
 2. Leggi `documentation/quickstart/agent_start_here.md`.
-3. Leggi `documentation/operational/README.md`.
-4. Leggi `documentation/operational/spec/README.md`.
-5. Leggi `documentation/operational/alignment/README.md`.
-6. Leggi `documentation/operational/execution/README.md`.
-7. Leggi `workflow/README.md`.
+3. Leggi `documentation/README.md`.
+4. Leggi `documentation/core/README.md`.
+5. Leggi `documentation/method/README.md`.
+6. Leggi `workflow/README.md`.
+7. Leggi `prompts/README.md`.
 8. Leggi il branch requisiti in `workflow/requirements/<branch>/`.
 9. Mappa path e riferimenti obsoleti.
 10. Correggi codice e documentazione nello stesso ciclo.
 11. Esegui validazioni.
 
-Nota: `documentation/R2A_full-ai-context.md` resta il contesto completo da passare a chat LLM esterne o analisi estese, non e obbligatorio in ogni avvio operativo.
+Nota: in caso di refactor strutturale/documentale ampio, leggere anche `documentation/R2A_full-ai-context.md`.
 
 ## Checklist Tecnica
 

@@ -370,7 +370,7 @@ Prima di ogni implementazione identity/access:
 
 ## 13. Gap Attuali (da Risolvere)
 
-Secondo `operational/alignment/`:
+Secondo `documentation/method/alignment-model/`:
 
 | Gap | Priorità | Note |
 |-----|----------|------|

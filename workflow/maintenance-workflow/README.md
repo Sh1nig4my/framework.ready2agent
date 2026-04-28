@@ -48,10 +48,10 @@ Convenzione tracker globale:
 
 1. `README.md`
 2. `documentation/quickstart/agent_start_here.md`
-3. `documentation/operational/README.md`
-4. `documentation/operational/spec/README.md`
-5. `documentation/operational/alignment/README.md`
-6. `documentation/operational/execution/README.md`
+3. `documentation/method/README.md`
+4. `documentation/core/README.md`
+5. `documentation/method/alignment-model/README.md`
+6. `documentation/method/execution-rules/README.md`
 7. `workflow/README.md`
 8. `workflow/maintenance-workflow/README.md`
 9. `workflow/requirements/<branch>/`

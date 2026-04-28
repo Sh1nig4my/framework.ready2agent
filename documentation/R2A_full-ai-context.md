@@ -9,10 +9,9 @@
 
 ## 1) Executive Context
 
-Ready2Agent is an AI-native software framework with two equally important identities:
+Ready2Agent is an AI-native software framework with three aligned dimensions:
 
-1. **Plug-and-play framework** for real delivery
-2. **Demonstrative framework** for coding-agent methodology
+1. **R2A Core**: plug-and-play runtime framework for real delivery\n2. **R2A Method**: agent-native methodology for reproducible evolution\n3. **R2A Extensions**: optional future plugin ecosystem separated from Core
 
 The project is intentionally structured so that a developer can either:
 
@@ -199,7 +198,7 @@ Copy strategy:
 ### 10.1 Source-of-truth hierarchy
 
 1. Runtime behavior in code
-2. Architecture and constraints in `documentation/operational/spec/*`
+2. Architecture and constraints in `documentation/documentation/core/*`
 3. Operational execution trail in `workflow/R2A-integration/*`
 4. Decision trace in `documentation/project-meta/decision_log.md`
 
@@ -244,7 +243,7 @@ For a new agent or contributor (operational path):
 
 1. Read `README.md`.
 2. Read `documentation/quickstart/agent_start_here.md`.
-3. Read `documentation/operational/README.md` and operational indexes.
+3. Read `documentation/method/README.md` and operational indexes.
 4. Read `prompts/README.md` and choose execution mode.
 5. Inspect workflow materials in `workflow/R2A-integration/`.
 6. Implement only in scoped boundaries.

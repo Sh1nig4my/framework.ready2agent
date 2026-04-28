@@ -13,9 +13,9 @@ Dimostrare la conformita alla spec e lasciare il repository privo di residui leg
 ## Input
 
 - Leggere:
-  - `documentation/operational/spec/README.md`
-  - `documentation/operational/alignment/README.md`
-  - `documentation/operational/execution/README.md`
+  - `documentation/core/README.md`
+  - `documentation/method/alignment-model/README.md`
+  - `documentation/method/execution-rules/README.md`
   - repository completo nelle aree toccate
 - Modificare:
   - file obsoleti residui

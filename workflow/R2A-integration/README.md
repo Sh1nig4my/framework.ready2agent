@@ -20,9 +20,9 @@ Questo documento è anche un **artefatto di caso studio**: può essere forkato c
 
 Per ogni task, consulta in ordine:
 
-1. `documentation/operational/spec/README.md`
-2. `documentation/operational/alignment/README.md`
-3. `documentation/operational/execution/README.md`
+1. `documentation/core/README.md`
+2. `documentation/method/alignment-model/README.md`
+3. `documentation/method/execution-rules/README.md`
 
 ---
 
@@ -171,7 +171,7 @@ PHASE 7 → dipende da tutte
 - **Tracker globale**: `workflow/ready2agent_daily_execution_tracker.md`
 - **Tracker locale flow**: `workflow/R2A-integration/flow-execution-tracker.md`
 - **Prompts Guide**: `prompts/README.md`
-- **Operational Context**: `documentation/operational/execution/README.md`
+- **Operational Context**: `documentation/method/execution-rules/README.md`
 
 ---
 

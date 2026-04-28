@@ -6,12 +6,14 @@
 
 ## Metadati
 
-- Ultimo aggiornamento: 2026-04-27
+- Ultimo aggiornamento: 2026-04-28
 - Stato: Pronto per la produzione
 
-Ready2Agent è un framework AI-native costruito con Next.js + TypeScript con due livelli di lettura complementari: livello divulgativo sul metodo e livello implementativo plug-and-play.
+Ready2Agent e un framework AI-native con tassonomia ufficiale:
 
-Questo `README.md` e il primo file da leggere sempre, sia per agenti sia per esseri umani.
+`R2A = Core + Method + Extensions`
+
+Questo `README.md` e il primo file da leggere sempre.
 
 ## Quick Start
 
@@ -25,9 +27,20 @@ npm run dev
 
 Su database vuoto vai su `/setup` per creare il primo account `SUPER`.
 
-## Struttura Standard
+## Tassonomia Ufficiale
 
-La struttura de facto del repository e:
+1. **R2A Core**
+   Runtime applicativo stabile e plug-and-play (`src/`, auth/session, ruoli, API, policy server-side, MongoDB/Mongoose).
+
+2. **R2A Method**
+   Metodo agent-native per evoluzione software tracciabile (documentazione metodologica, workflow, prompt, tracker, execution/alignment model).
+
+3. **R2A Extensions**
+   Ecosistema opzionale futuro per plugin separati dal Core (`extensions/`), senza dipendenze runtime attive in questa fase.
+
+## Struttura Repository
+
+La struttura standard del repository e:
 
 ```text
 ready2agent/
@@ -38,10 +51,11 @@ ready2agent/
 │   ├── shared/         # Contratti condivisi
 │   ├── tests/          # Test applicativi
 │   └── scripts/        # Script di avvio/utilita
-├── documentation/      # Documentazione completa progetto (Documentation)
-├── workflow/           # Workflow operativo e caso studio
+├── documentation/      # Documentazione Core + Method + Governance
+├── workflow/           # Istanze operative concrete del Method
 │   └── requirements/   # Requisiti iniziali (input workflow)
-├── prompts/            # Prompt operativi per agenti
+├── prompts/            # Interfaccia operativa prompt per agenti
+├── extensions/         # Ecosistema opzionale futuro (template plugin)
 └── public/             # Asset statici
 ```
 
@@ -49,28 +63,30 @@ ready2agent/
 
 Controller (`src/app/api/*`) -> Service (`src/server/service/*`) -> Repository (`src/server/repository/*`) -> MongoDB.
 
-## Due Livelli di Lettura
+## Ordine di Lettura
 
-1. Divulgativo/metodologico: mostra il metodo di lavoro agent-assisted, il workflow e la tracciabilita.
-2. Implementativo/plug-and-play: fornisce una base applicativa pronta da usare e adattare nei progetti personali.
-
-## Documentazione e Prompt
-
-Ordine di lettura consigliato prima di qualunque modifica:
+Ordine consigliato prima di qualunque modifica:
 
 1. `README.md`
-2. `documentation/quickstart/agent_start_here.md` (agenti) o `documentation/quickstart/human_start_here.md` (umani)
+2. `documentation/quickstart/agent_start_here.md`
 3. `documentation/README.md`
-4. `workflow/README.md`
-5. `prompts/README.md`
+4. `documentation/core/README.md`
+5. `documentation/method/README.md`
+6. `workflow/README.md`
+7. `prompts/README.md`
+8. prompt specifico da usare
 
-Entry point onboarding rapido:
-
-- `documentation/quickstart/`
-
-Contesto completo per analisi estese/chat LLM esterne:
+Contesto esteso per analisi complete:
 
 - `documentation/R2A_full-ai-context.md`
+
+## Differenze tra le aree
+
+- `documentation/core/` -> cosa non rompere nel runtime Core
+- `documentation/method/` -> come lavorare nel repository con metodo agent-native
+- `workflow/` -> istanze operative concrete del metodo
+- `prompts/` -> interfaccia operativa per avviare lavoro agentico
+- `extensions/` -> area opzionale futura per plugin separati dal Core
 
 ## Validazione
 
