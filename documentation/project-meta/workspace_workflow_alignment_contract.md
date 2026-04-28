@@ -49,8 +49,11 @@ reviews/
 ### 1.2 workflow/R2A-integration/
 
 ```
-00_ready2agent_master_execution_index.md
+README.md
   → Indice task-by-task completo
+
+flow-execution-tracker.md
+  → Tracker avanzamento del singolo flow
 
 phase_*/
   → Artefatti per fase:
@@ -62,8 +65,8 @@ phase_*/
 prompts/
   → Guida selezione e uso mode
 
-sh1nig4my_daily_execution_tracker.md
-  → Tracker avanzamento globale
+workflow/ready2agent_daily_execution_tracker.md
+  → Tracker avanzamento globale multi-flow
 ```
 
 ---
@@ -187,7 +190,7 @@ PER LAVORO OPERATIVO (task execution):
 2. operational/alignment/ (stato)
 3. workflow/R2A-integration/00_..._index.md (piano)
 4. workflow/R2A-integration/phase_*/PHASE-*.md (task)
-5. sh1nig4my_daily_execution_tracker.md (progresso)
+5. ready2agent_daily_execution_tracker.md (progresso)
 
 PER CONTESTO GENERALE (onboarding, review):
 1. README.md

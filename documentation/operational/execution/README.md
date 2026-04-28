@@ -20,7 +20,7 @@ Questa sezione definisce le **regole esecutive** e la **sequenza task** per il w
 | File | Contenuto |
 |------|-----------|
 | `00_rules_and_ordering.md` | Regole esecutive base |
-| Workflow | `workflow/R2A-integration/00_ready2agent_master_execution_index.md` |
+| Workflow | `workflow/R2A-integration/README.md` |
 
 ## Regole Base
 
@@ -43,7 +43,7 @@ Questa sezione definisce le **regole esecutive** e la **sequenza task** per il w
 
 ## Per Dettaglio Task
 
-Consultare `workflow/R2A-integration/00_ready2agent_master_execution_index.md`
+Consultare `workflow/R2A-integration/README.md`
 
 ## Uso
 

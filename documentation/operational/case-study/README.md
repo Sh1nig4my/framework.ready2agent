@@ -22,7 +22,7 @@ Documentare Ready2Agent come **caso d'uso pubblico** di sviluppo AI-native guida
 - Base tecnica: codice in `src/`
 - Source of truth: `operational/spec/`
 - Esecuzione: `workflow/R2A-integration/`
-- Tracker: `workflow/sh1nig4my_daily_execution_tracker.md`
+- Tracker: `workflow/ready2agent_daily_execution_tracker.md`
 
 ## Value
 

@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- Ultimo aggiornamento: 2026-04-27
+- Ultimo aggiornamento: 2026-04-29
 - Pubblico: coding agent
 - Status: attivo
 
@@ -15,9 +15,10 @@
 5. `documentation/operational/alignment/README.md`
 6. `documentation/operational/execution/README.md`
 7. `workflow/README.md`
-8. `workflow/R2A-integration/README.md`
-9. `workflow/sh1nig4my_daily_execution_tracker.md`
-10. `prompts/README.md`
+8. `workflow/<FLOW_NAME>/README.md` (se il flow esiste) oppure `workflow/maintenance-workflow/README.md` (se devi iniziare un nuovo flow)
+9. `workflow/requirements/README.md`
+10. `workflow/ready2agent_daily_execution_tracker.md`
+11. `prompts/README.md`
 
 ## Contesto Esteso (Opzionale)
 

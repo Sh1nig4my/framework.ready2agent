@@ -34,7 +34,7 @@ Registro sintetico delle **decisioni implementative e documentali ad alto impatt
 - **Decisione**: Consolidati i path canonici post-refactor (`documentation/`, `workflow/`, `prompts/`, `src/`) e introdotti prompt iniziali standard per maintenance globale e avvio implementazione.
 - **Motivazione**: Eliminare drift tra rename/spostamenti repository e riferimenti interni, riducendo errori operativi in contesti agent-driven.
 - **Impatto**: Aggiornati entrypoint, quickstart, governance, workflow hub, tracker, index e copy applicativo; aggiunta sezione copy/paste universale nel prompt hub.
-- **Documenti aggiornati**: `README.md`, `documentation/README.md`, `prompts/README.md`, `prompts/maintenance-global-realignment.md`, `prompts/standard-implementation-start.md`, `workflow/README.md`, `workflow/requirements/ready2agent_master_spec_v2_1.md`
+- **Documenti aggiornati**: `README.md`, `documentation/README.md`, `prompts/README.md`, `prompts/maintenance-global-realignment.md`, `prompts/standard-implementation-start.md`, `workflow/README.md`, `workflow/requirements/r2a-core/ready2agent_master_spec_v2_1.md`
 
 ---
 
@@ -54,7 +54,7 @@ Registro sintetico delle **decisioni implementative e documentali ad alto impatt
 - **Decisione**: Eliminato il macro-task storage (ex phase 6) e rimossa l'integrazione allegati via Cloudflare R2 dal runtime Basepack demo
 - **Motivazione**: Ridurre scope e complessità per la prima demo, concentrando la delivery su auth, identity, API, data model, UI e hardening
 - **Impatto**: Rimossi endpoint/dashboard/moduli/test del dominio files, rimosse env e dipendenze R2, rinumerate le fasi successive (phase_7_ui_visibility → phase_6_ui_visibility, phase_8_hardening → phase_7_hardening)
-- **Documenti aggiornati**: workflow/R2A-integration/00_ready2agent_master_execution_index.md, workflow/sh1nig4my_daily_execution_tracker.md, documentation/operational/execution/README.md, documentation/operational/setup/README.md, documentation/operational/spec/04_storage_security_compliance.md, documentation/operational/alignment/*.md
+- **Documenti aggiornati**: workflow/R2A-integration/README.md, workflow/ready2agent_daily_execution_tracker.md, documentation/operational/execution/README.md, documentation/operational/setup/README.md, documentation/operational/spec/04_storage_security_compliance.md, documentation/operational/alignment/*.md
 
 ---
 
@@ -64,7 +64,7 @@ Registro sintetico delle **decisioni implementative e documentali ad alto impatt
 - **Decisione**: Rimossi i capitoli workflow originari Phase 4 (user lifecycle) e Phase 8 (email logging audit), eliminata la logica di invio email dal runtime basepack e riallineati i flussi staff/user alla condivisione manuale dei link di iscrizione
 - **Motivazione**: Pubblicare una demo funzionante senza dipendenza da dominio o provider email esterno
 - **Impatto**: Inviti ADMIN/OPERATOR basati su link generato in dashboard e copiabile; registrazione USER senza verifica email; sessioni mantenute su JWT; documentazione storica/operativa riallineata al nuovo scope; rinumerazione workflow in sequenza continua (Phase 4..8)
-- **Documenti aggiornati**: workflow/R2A-integration/00_ready2agent_master_execution_index.md, workflow/sh1nig4my_daily_execution_tracker.md, documentation/operational/execution/README.md, documentation/operational/setup/README.md, documentation/operational/spec/04_storage_security_compliance.md, documentation/project-meta/decision_log.md
+- **Documenti aggiornati**: workflow/R2A-integration/README.md, workflow/ready2agent_daily_execution_tracker.md, documentation/operational/execution/README.md, documentation/operational/setup/README.md, documentation/operational/spec/04_storage_security_compliance.md, documentation/project-meta/decision_log.md
 
 ---
 

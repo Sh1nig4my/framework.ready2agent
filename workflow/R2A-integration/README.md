@@ -168,7 +168,8 @@ PHASE 7 → dipende da tutte
 ## Links Utili
 
 - **Workflow Hub**: `workflow/R2A-integration/README.md`
-- **Tracker**: `workflow/sh1nig4my_daily_execution_tracker.md`
+- **Tracker globale**: `workflow/ready2agent_daily_execution_tracker.md`
+- **Tracker locale flow**: `workflow/R2A-integration/flow-execution-tracker.md`
 - **Prompts Guide**: `prompts/README.md`
 - **Operational Context**: `documentation/operational/execution/README.md`
 
