@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- Ultimo aggiornamento: 2026-04-28
+- Ultimo aggiornamento: 2026-04-29
 - Pubblico: coding agent
 - Status: attivo
 
@@ -24,6 +24,11 @@ Leggi `documentation/R2A_full-ai-context.md` quando serve contesto completo per 
 
 - riallineamento globale: `prompts/maintenance-global-realignment.md`
 - implementazione standard: `prompts/standard-implementation-start.md`
+- modifica non pianificata: `prompts/unplanned-change-start.md`
+- design tema grafico: `prompts/theme-system-design-start.md`
+- generazione extension: `prompts/extension-generation-start.md`
+- generazione workflow a capitoli: `prompts/maintenance-workflow/prompt-01-generate-integration-chapters.md`
+- generazione task workflow: `prompts/maintenance-workflow/prompt-02-generate-integration-tasks.md`
 
 ## Guida Rapida per Scope
 
@@ -31,7 +36,7 @@ Leggi `documentation/R2A_full-ai-context.md` quando serve contesto completo per 
 - `documentation/method/` serve per capire come lavorare nel repository.
 - `workflow/` contiene le istanze operative concrete.
 - `prompts/` contiene l'interfaccia operativa per agenti.
-- `extensions/` va letto solo se il task riguarda plugin opzionali.
+- `extensions/` va letto solo se il task riguarda estensioni tecniche dev-side (non runtime).
 
 ## Regole Non Negoziabili
 

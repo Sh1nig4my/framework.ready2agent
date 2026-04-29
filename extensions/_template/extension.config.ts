@@ -13,7 +13,7 @@ export type ExtensionConfig = {
 };
 
 export const extensionConfig: ExtensionConfig = {
-  id: "example.extension",
+  id: "<extension-id>",
   version: "0.0.0-template",
   enabledByDefault: false,
   declares: {

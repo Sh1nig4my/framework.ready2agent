@@ -1,5 +1,13 @@
 # R2A Core Requirements
 
+Stato specifica: [completed]
+
+## Metadata
+
+- Ultimo aggiornamento: 2026-04-29
+- Stato specifica: completed
+- Flusso workflow: `workflow/R2A-integration/`
+
 ## Scopo
 
 La cartella `workflow/requirements/r2a-core/` contiene la spec didattica viva del Core Ready2Agent.
@@ -23,3 +31,9 @@ Quando cambiano tassonomia, vincoli o flussi:
 1. aggiorna `documentation/core/` e/o `documentation/method/`;
 2. aggiorna i riferimenti in `workflow/` e `prompts/`;
 3. aggiorna questa cartella nello stesso change set.
+
+## Stato avanzamento
+
+- Stato corrente: `completed`
+- Evidenza: flow `workflow/R2A-integration/` presente e marcato completato nel tracker globale
+- Prossima azione: solo manutenzione evolutiva in caso di nuovi requisiti Core

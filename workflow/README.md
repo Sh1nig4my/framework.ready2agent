@@ -2,7 +2,7 @@
 
 ## Metadati
 
-- Ultimo aggiornamento: 2026-04-28
+- Ultimo aggiornamento: 2026-04-29
 - Stato: attivo
 
 ## Scopo
@@ -11,7 +11,7 @@ La cartella `workflow/` ospita il sistema operativo di esecuzione multi-flusso d
 
 Modello operativo:
 
-- `workflow/maintenance-workflow/` = toolkit agnostico (prompt + template)
+- `prompts/maintenance-workflow/` = toolkit agnostico (prompt + template) per generare flussi in `workflow/`
 - `workflow/requirements/<branch>/` = input per singolo ramo implementativo
 - `workflow/<FLOW_NAME>/` = esecuzione concreta del ramo (capitoli/task/status/tracker locale)
 - `workflow/<project-name>_daily_execution_tracker.md` = tracker globale di tutti i flussi aperti
@@ -26,11 +26,6 @@ In questo repository il file e `workflow/ready2agent_daily_execution_tracker.md`
 workflow/
 ├── README.md
 ├── <project-name>_daily_execution_tracker.md
-├── maintenance-workflow/
-│   ├── README.md
-│   ├── prompt-01-generate-integration-chapters.md
-│   ├── prompt-02-generate-integration-tasks.md
-│   └── flow-execution-tracker.md
 ├── requirements/
 │   ├── README.md
 │   ├── r2a-core/
@@ -45,6 +40,16 @@ workflow/
     └── <chapter>/
 ```
 
+Toolkit prompt correlato:
+
+```text
+prompts/maintenance-workflow/
+├── README.md
+├── prompt-01-generate-integration-chapters.md
+├── prompt-02-generate-integration-tasks.md
+└── flow-execution-tracker.md
+```
+
 ## Regole operative
 
 - un task alla volta nel flusso attivo;
@@ -56,8 +61,8 @@ workflow/
 
 1. Leggi `documentation/README.md`, `documentation/core/README.md` e `documentation/method/README.md`.
 2. Scegli il branch requisito in `workflow/requirements/<branch>/`.
-3. Usa `workflow/maintenance-workflow/prompt-01-generate-integration-chapters.md`.
-4. Poi usa `workflow/maintenance-workflow/prompt-02-generate-integration-tasks.md`.
+3. Usa `prompts/maintenance-workflow/prompt-01-generate-integration-chapters.md`.
+4. Poi usa `prompts/maintenance-workflow/prompt-02-generate-integration-tasks.md`.
 5. Esegui task nel flow creato sotto `workflow/<FLOW_NAME>/`.
 
 ## Collegamenti

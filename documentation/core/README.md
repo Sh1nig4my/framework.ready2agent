@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- Ultimo aggiornamento: 2026-04-28
+- Ultimo aggiornamento: 2026-04-29
 - Pubblico: contributor tecnici e coding agent
 - Status: attivo
 
@@ -35,3 +35,4 @@ Il Core include una configurazione grafica minima in `src/config/r2a-theme.ts` p
 - token modificabili: `brand`, `surface`, `text`, `state`
 - integrazione: CSS custom properties globali (`src/app/globals.css`)
 - confini: layout e logica runtime invariati; nessuna dipendenza da `extensions/`; nessuna configurazione runtime via DB
+- nota: le extension in `extensions/` sono dev-side e non vengono caricate dal Core a runtime

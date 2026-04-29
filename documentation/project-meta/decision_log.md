@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- **Ultimo aggiornamento**: 2026-04-28
+- **Ultimo aggiornamento**: 2026-04-29
 - **Pubblico**: agenti di coding, stakeholder
 - **Status**: attivo
 
@@ -28,13 +28,33 @@ Registro sintetico delle **decisioni implementative e documentali ad alto impatt
 
 ## Entries
 
+### 2026-04-29 - Extensions agnostiche e flusso generazione formalizzato
+
+- **Area**: Extensions governance, prompt model, repository alignment
+- **Decisione**: Rimossa qualunque extension di esempio dal repository e formalizzato il modello agnostico di generazione extension a partire da richiesta tecnica testuale o file formale.
+- **Motivazione**: Evitare bias implementativi nel ramo `extensions/` e mantenere il sistema neutro, riusabile e coerente con il principio dev-side non-runtime.
+- **Impatto**: Eliminata la cartella `extensions/customer-profile/`, reso il `registry.md` strutturale con placeholder, rafforzati `extensions/README.md` e `prompts/extension-generation-start.md` con DoD e flusso operativo.
+- **Documenti aggiornati**: `extensions/README.md`, `extensions/registry.md`, `extensions/_template/extension.config.ts`, `prompts/extension-generation-start.md`, `documentation/project-meta/decision_log.md`
+
+---
+
+### 2026-04-29 - Prompt hub esteso e completamento area extensions dev-side
+
+- **Area**: Prompt operations, workflow/prompt path alignment, estensioni tecniche
+- **Decisione**: Consolidato `prompts/` come hub unico con nuovi prompt operativi (unplanned change, theme design, extension generation), riallineati i path post-refactor verso `prompts/maintenance-workflow/` e completata l'area `extensions/` con registry strutturato, template rinforzato ed extension esempio non-runtime.
+- **Motivazione**: Eliminare riferimenti legacy, coprire casi operativi mancanti e rendere realmente utilizzabile il flusso di generazione extension per sviluppatori.
+- **Impatto**: Aggiornati README e documenti chiave, introdotti tre nuovi prompt ufficiali, chiarito ovunque che le extensions non agiscono a runtime e non sono modificabili da utenti.
+- **Documenti aggiornati**: `prompts/README.md`, `prompts/unplanned-change-start.md`, `prompts/theme-system-design-start.md`, `prompts/extension-generation-start.md`, `prompts/maintenance-workflow/*`, `workflow/README.md`, `workflow/requirements/README.md`, `extensions/*`, `README.md`, `documentation/quickstart/agent_start_here.md`, `documentation/quickstart/human_start_here.md`, `documentation/core/README.md`, `documentation/R2A_full-ai-context.md`, `documentation/project-meta/decision_log.md`
+
+---
+
 ### 2026-04-28 - Content and Learning Realignment baseline
 
 - **Area**: Documentazione, learning path, workflow requirements governance
 - **Decisione**: Avviato il riallineamento Content & Learning con audit globale link/percorsi; formalizzato `workflow/requirements/r2a-core/` come spec didattica viva da mantenere allineata riga-per-riga allo stato corrente.
 - **Motivazione**: Preservare valore didattico del metodo agentico reale evitando drift tra documentazione corrente e requirement branch Core.
 - **Impatto**: Corretti path incoerenti (`documentation/documentation/*`), uniformati riferimenti in workflow requirements/maintenance, introdotto README dedicato per `r2a-core` e chiarito il contratto di manutenzione continua.
-- **Documenti aggiornati**: `workflow/requirements/README.md`, `workflow/requirements/r2a-core/README.md`, `workflow/requirements/r2a-core/ready2agent_master_spec_v2_1.md`, `workflow/maintenance-workflow/prompt-01-generate-integration-chapters.md`, `documentation/R2A_full-ai-context.md`, `documentation/core/user-detail-blueprint.md`
+- **Documenti aggiornati**: `workflow/requirements/README.md`, `workflow/requirements/r2a-core/README.md`, `workflow/requirements/r2a-core/ready2agent_master_spec_v2_1.md`, `prompts/maintenance-workflow/prompt-01-generate-integration-chapters.md`, `documentation/R2A_full-ai-context.md`, `documentation/core/user-detail-blueprint.md`
 
 ---
 

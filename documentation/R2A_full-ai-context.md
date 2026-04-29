@@ -13,9 +13,9 @@ Ready2Agent keeps one identity with three aligned dimensions:
 
 1. **R2A Core**: plug-and-play runtime framework for real delivery.
 2. **R2A Method**: agent-native system for traceable software evolution.
-3. **R2A Extensions**: optional future plugin ecosystem, separated from Core.
+3. **R2A Extensions**: optional dev-side extension ecosystem, separated from Core runtime.
 
-No real extension is part of Core in the current phase.
+No extension is loaded by Core at runtime in the current phase.
 
 ## 2) Folder Taxonomy
 
@@ -25,7 +25,7 @@ documentation/core/   = R2A Core documentation/spec
 documentation/method/ = R2A Method documentation/spec
 workflow/             = R2A Method execution instances
 prompts/              = R2A Method prompt interface
-extensions/           = R2A Extensions ecosystem (prepared, optional)
+extensions/           = R2A Extensions ecosystem (dev-side, non-runtime)
 public/               = static assets
 ```
 
@@ -71,20 +71,26 @@ Method is theory and constraints; workflow is execution history and current oper
 
 - `prompts/standard-implementation-start.md` for scoped implementation tasks
 - `prompts/maintenance-global-realignment.md` for broader structural/documental realignment
+- `prompts/unplanned-change-start.md` for urgent non-scheduled changes
+- `prompts/theme-system-design-start.md` for visual theme analysis and token updates
+- `prompts/extension-generation-start.md` for technical extension scaffolding
+- `prompts/maintenance-workflow/prompt-01-generate-integration-chapters.md` for flow chapter generation
+- `prompts/maintenance-workflow/prompt-02-generate-integration-tasks.md` for flow task generation
 
 Prompt read order must stay aligned with quickstart and documentation hubs.
 
 ## 6) Extensions Role
 
-`extensions/` is architectural preparation only.
+`extensions/` is a technical extension workspace for developers.
 
 - Extensions are optional.
 - Core must not depend on any specific extension.
+- Core does not load extensions at runtime.
+- End users cannot modify extension behavior from the application UI.
 - Extensions must respect Controller/Service/Repository and auth/access constraints.
 - Extensions must declare config, schema, permissions, API/UI surface, and documentation.
 
-Possible future examples (concept only) are schema-driven modules such as configurable user data domains.
-No plugin implementation is required in this phase.
+Possible examples are schema-driven modules such as configurable user data domains.
 
 ## 7) Official Read Order
 

@@ -10,7 +10,7 @@ Generare o riallineare la struttura macro di integrazione a capitoli, senza crea
    - `README.md`
    - `documentation/`
    - `workflow/requirements/<branch>/`
-   - `workflow/maintenance-workflow/README.md`
+   - `prompts/maintenance-workflow/README.md`
 2. Deduce il nome del flusso dai requirement file e crea/aggiorna:
    - `workflow/<FLOW_NAME>/`
    - `workflow/<project-name>_daily_execution_tracker.md` come tracker globale del repository
@@ -23,16 +23,22 @@ Generare o riallineare la struttura macro di integrazione a capitoli, senza crea
 5. Gestisci il tracker globale del repository:
    - se `workflow/<project-name>_daily_execution_tracker.md` non esiste, crealo;
    - se esiste, aggiorna il registro flussi aggiungendo/aggiornando la riga del nuovo flusso.
-6. Aggiorna `workflow/maintenance-workflow/README.md` solo se servono riallineamenti di link/struttura.
+6. Aggiorna lo stato della specifica in `workflow/requirements/<branch>/README.md`:
+   - assicurati che esista il badge in testa: `Stato specifica: [completed|in-progress|not-started]`;
+   - se il flow viene creato in questo passaggio, imposta stato `in-progress`;
+   - se il flow non viene creato, mantieni `not-started`;
+   - se il flow risulta gia completato, imposta `completed`.
+7. Aggiorna `prompts/maintenance-workflow/README.md` solo se servono riallineamenti di link/struttura.
 
 ## Vincoli obbligatori
 
 - Non creare file `task-*.md` in questo prompt.
 - Non implementare codice applicativo.
 - Non cambiare scope dei requirement.
+- Non lasciare README di branch requirements senza badge stato.
 - Rispettare spec e regole in `documentation/core/` e `documentation/method/execution-rules/`.
 - Mantenere naming in kebab-case e numerazione capitoli a due cifre (`01-`, `02-`, ...).
-- Non creare capitoli dentro `workflow/maintenance-workflow/`.
+- Non creare capitoli dentro `prompts/maintenance-workflow/`.
 - Il tracker globale deve chiamarsi `workflow/<project-name>_daily_execution_tracker.md`.
 - Non creare file fuori dai capitoli, salvo questi file root del flow: `README.md`, `flow-execution-tracker.md`.
 - Il tracker globale e l'unico file ammesso fuori dal flow: `workflow/<project-name>_daily_execution_tracker.md`.
@@ -82,5 +88,6 @@ Il file `workflow/<FLOW_NAME>/README.md` deve spiegare:
    - [ ] nessun task creato
    - [ ] capitoli con README+status
    - [ ] flusso creato in `workflow/<FLOW_NAME>/`
+   - [ ] badge stato aggiornato in `workflow/requirements/<branch>/README.md`
    - [ ] link interni validi
    - [ ] allineamento a documentation/requirements

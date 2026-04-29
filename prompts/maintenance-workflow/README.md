@@ -8,7 +8,7 @@
 
 ## Scopo
 
-La cartella `workflow/maintenance-workflow/` contiene un toolkit operativo agnostico, riusabile in qualsiasi progetto agentico.
+La cartella `prompts/maintenance-workflow/` contiene un toolkit operativo agnostico, riusabile in qualsiasi progetto agentico.
 
 Contiene solo metodologia, prompt e template. Non contiene workflow specifici di un singolo ramo implementativo.
 
@@ -17,7 +17,7 @@ I workflow reali vengono generati fuori da questa cartella, direttamente sotto `
 ## Struttura
 
 ```text
-workflow/maintenance-workflow/
+prompts/maintenance-workflow/
 ├── README.md
 ├── prompt-01-generate-integration-chapters.md
 ├── prompt-02-generate-integration-tasks.md
@@ -53,7 +53,7 @@ Convenzione tracker globale:
 5. `documentation/method/alignment-model/README.md`
 6. `documentation/method/execution-rules/README.md`
 7. `workflow/README.md`
-8. `workflow/maintenance-workflow/README.md`
+8. `prompts/maintenance-workflow/README.md`
 9. `workflow/requirements/<branch>/`
 
 ## Come usare i prompt
@@ -68,7 +68,7 @@ Regola: Prompt 1 non crea task. Prompt 2 non ridefinisce i capitoli se non neces
 ### Esegui Prompt 01 (capitoli)
 
 ```markdown
-Leggi e segui integralmente `workflow/maintenance-workflow/prompt-01-generate-integration-chapters.md`.
+Leggi e segui integralmente `prompts/maintenance-workflow/prompt-01-generate-integration-chapters.md`.
 
 Input requirements branch: `workflow/requirements/<branch>/`.
 
@@ -84,7 +84,7 @@ Non creare task in questa fase.
 ### Esegui Prompt 02 (task)
 
 ```markdown
-Leggi e segui integralmente `workflow/maintenance-workflow/prompt-02-generate-integration-tasks.md`.
+Leggi e segui integralmente `prompts/maintenance-workflow/prompt-02-generate-integration-tasks.md`.
 
 Input:
 - requirements branch: `workflow/requirements/<branch>/`
@@ -113,7 +113,7 @@ Obiettivo:
 
 ## Uso del tracker
 
-Il file `workflow/maintenance-workflow/flow-execution-tracker.md` e un template di tracker.
+Il file `prompts/maintenance-workflow/flow-execution-tracker.md` e un template di tracker.
 
 Tracker operativi reali:
 
@@ -136,7 +136,7 @@ Leggi prima:
 3. `documentation/method/README.md`
 4. `workflow/requirements/<branch>/`
 5. `workflow/README.md`
-6. `workflow/maintenance-workflow/README.md`
+6. `prompts/maintenance-workflow/README.md`
 7. `workflow/<project-name>_daily_execution_tracker.md`
 8. `workflow/<FLOW_NAME>/flow-execution-tracker.md`
 9. `workflow/<FLOW_NAME>/README.md`

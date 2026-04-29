@@ -10,7 +10,7 @@ Generare task dettagliati per ogni capitolo di un flusso in `workflow/<FLOW_NAME
    - `README.md`
    - `documentation/`
    - `workflow/requirements/<branch>/`
-   - `workflow/maintenance-workflow/README.md`
+   - `prompts/maintenance-workflow/README.md`
    - `workflow/<FLOW_NAME>/README.md`
    - tutti i README/status dei capitoli
 2. Entra in `workflow/<FLOW_NAME>/`.

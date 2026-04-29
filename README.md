@@ -6,7 +6,7 @@
 
 ## Metadati
 
-- Ultimo aggiornamento: 2026-04-28
+- Ultimo aggiornamento: 2026-04-29
 - Stato: Pronto per la produzione
 
 Ready2Agent e un framework AI-native con tassonomia ufficiale:
@@ -36,7 +36,7 @@ Su database vuoto vai su `/setup` per creare il primo account `SUPER`.
    Metodo agent-native per evoluzione software tracciabile (documentazione metodologica, workflow, prompt, tracker, execution/alignment model).
 
 3. **R2A Extensions**
-   Ecosistema opzionale futuro per plugin separati dal Core (`extensions/`), senza dipendenze runtime attive in questa fase.
+   Ecosistema opzionale dev-side per estensioni tecniche separate dal Core (`extensions/`), senza dipendenze runtime.
 
 ## Struttura Repository
 
@@ -55,7 +55,7 @@ ready2agent/
 ├── workflow/           # Istanze operative concrete del Method
 │   └── requirements/   # Requisiti iniziali (input workflow)
 ├── prompts/            # Interfaccia operativa prompt per agenti
-├── extensions/         # Ecosistema opzionale futuro (template plugin)
+├── extensions/         # Estensioni tecniche dev-side (non runtime)
 └── public/             # Asset statici
 ```
 
@@ -96,7 +96,7 @@ Contesto esteso per analisi complete:
 - `documentation/method/` -> come lavorare nel repository con metodo agent-native
 - `workflow/` -> istanze operative concrete del metodo
 - `prompts/` -> interfaccia operativa per avviare lavoro agentico
-- `extensions/` -> area opzionale futura per plugin separati dal Core
+- `extensions/` -> area estensioni dev-side separate dal Core e non caricate a runtime
 
 ## Percorsi di apprendimento
 

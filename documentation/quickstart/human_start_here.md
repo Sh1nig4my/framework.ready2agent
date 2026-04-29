@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- Ultimo aggiornamento: 2026-04-28
+- Ultimo aggiornamento: 2026-04-29
 - Pubblico: sviluppatori umani
 - Status: attivo
 
@@ -26,7 +26,7 @@ src/             codice applicativo (frontend, backend, test, script)
 documentation/   documentazione completa progetto
 workflow/        esecuzione task-by-task e metodologia
 prompts/         prompt operativi
-extensions/      area opzionale futura per plugin
+extensions/      estensioni tecniche dev-side (non runtime)
 public/          asset statici
 ```
 
